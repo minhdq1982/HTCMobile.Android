@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/chkMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/bg_checkbox" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_0_6x"
+                android:text="@string/survey_check_box_more"
+                android:textSize="@dimen/text_size_survey" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editMore"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/survey_spinner"
+            android:layout_marginLeft="@dimen/margin_padding_1_5x"
+            android:paddingLeft="@dimen/margin_padding_0_5x"
+            android:textColor="@color/colorEditText"
+            android:background="@drawable/bg_spinner_survey"
+            android:textSize="@dimen/text_size_survey" />
+    </LinearLayout>
+</LinearLayout>

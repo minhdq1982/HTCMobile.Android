@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/margin_padding_1x">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_step_1" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_2x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/make_appointment_service_list_title"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewServiceList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sBottom"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/margin_padding_0_5x"
+            android:paddingLeft="@dimen/margin_padding_0_5x"
+            android:paddingRight="@dimen/margin_padding_0_5x"
+            android:paddingBottom="@dimen/margin_padding_1x" />
+
+
+            <com.tvo.htc.view.component.CpnButton
+                android:layout_alignParentBottom="true"
+                android:id="@+id/cpnbNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:isCenterIcon="true"
+                app:btn_icon_right="@drawable/ic_arrow_right_white"
+                app:text="@string/service_make_appointment_next"
+                app:type="BLUE2" />
+
+    </RelativeLayout>
+
+</LinearLayout>

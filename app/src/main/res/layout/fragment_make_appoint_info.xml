@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/margin_padding_1x">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_step_3" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/frBottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_padding_2x">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/make_appointment_info_title"
+                        android:textSize="@dimen/text_size_24"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding_1_2x">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_0_5x"
+                        android:text="@string/make_appointment_info_tips" />
+
+                    <TextView
+                        style="@style/TextView_TitleEdit"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_date" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_text_height"
+                        android:background="@drawable/bg_edit_text"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorTransparent"
+                            android:hint="@string/make_appointment_info_date_hint"
+                            android:inputType="date"
+                            android:imeOptions="actionDone"
+                            android:textColor="@color/colorText" />
+
+                        <ImageView
+                            android:id="@+id/imPickDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/margin_padding_0_5x"
+                            android:paddingRight="@dimen/margin_padding_0_5x"
+                            android:src="@drawable/ic_pick_date" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/TextView_TitleEdit"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_time" />
+
+                    <com.tvo.htc.view.component.CpnSpinner
+                        android:id="@+id/spinerTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        style="@style/TextView_TitleEdit"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_city" />
+
+                    <com.tvo.htc.view.component.CpnSpinner
+                        android:id="@+id/spinerCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/TextView_TitleEdit"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_agency" />
+
+                    <com.tvo.htc.view.component.CpnSpinner
+                        android:id="@+id/spinerAgency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/TextView_TitleEdit"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_service_staff" />
+
+                    <EditText
+                        android:id="@+id/edtServiceStaff"
+                        style="@style/EditText.MakeAppointment"
+                        android:hint="@string/make_appointment_info_hint_service_staff"
+                        android:imeOptions="actionDone"
+                        android:lines="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_tips_2"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/frBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbPrevious"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:btn_icon_left="@drawable/ic_arrow_left_black"
+                app:text="@string/service_make_appointment_previous"
+                app:type="TRANSPARENT" />
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                app:text="@string/service_make_appointment_sussess"
+                app:type="BLUE2" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

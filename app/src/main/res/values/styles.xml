@@ -1,0 +1,122 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent-->
+        <!--</item>-->
+        <!--<item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>-->
+
+        <item name="android:windowDisablePreview">true</item>
+        <item name="fontFamily">@font/font_hyundai</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_padding_0_1x</item>
+        <item name="android:lineSpacingMultiplier">1.05</item>
+    </style>
+
+    <style name="FontRealBold" parent="@android:style/Widget.TextView">
+        <item name="fontFamily">@font/hyundai_sans_vn_head_office_bold</item>
+    </style>
+
+    <style name="EditText" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/edit_text_height</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColorHint">@color/colorTextGray</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+
+    <style name="EditText.MakeAppointment" parent="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="EditText.Note" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingLeft">@dimen/margin_padding_1x</item>
+        <item name="android:paddingRight">@dimen/margin_padding_1x</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColorHint">@color/colorBorder</item>
+    </style>
+
+    <style name="TextView_TitleEdit">
+        <item name="android:layout_marginTop">@dimen/margin_padding_1_5x</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/colorTextTitleEdt</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="SupportButtonText">
+        <item name="android:layout_marginLeft">@dimen/margin_padding_1_5x</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorTextTile</item>
+        <item name="android:textSize">@dimen/text_size_17</item>
+    </style>
+
+    <style name="AppointmentStyle">
+        <item name="android:layout_marginTop">@dimen/margin_padding_0_1x</item>
+        <item name="android:paddingTop">@dimen/margin_padding_0_5x</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_0_5x</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="AppointmentStyle.TextView">
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:textColor">@color/colorTextTitleEdt</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="AppointmentStyle.TextViewValue">
+        <item name="android:gravity">right</item>
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:textColor">@color/colorTextTile</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="AppointmentDetail">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="AppointmentDetail.TextInfo">
+        <item name="android:textColor">@color/colorTextTitleEdt</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+    <style name="AppointmentDetail.TextValue">
+        <item name="android:textColor">@color/colorTextTile</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:layout_marginLeft">@dimen/margin_padding_0_5x</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SurveyText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/colorTextTile</item>
+    </style>
+
+
+</resources>

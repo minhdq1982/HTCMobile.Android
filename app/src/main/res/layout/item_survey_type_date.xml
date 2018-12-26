@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/EditText"
+        android:paddingLeft="@dimen/margin_padding_1x"
+        android:background="@drawable/bg_spinner_survey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/survey_spinner"
+        android:hint="@string/make_appointment_info_hint_date"
+        android:textSize="@dimen/text_size_survey"
+        android:textColor="@color/colorTextTile"
+        android:inputType="date" />
+</LinearLayout>

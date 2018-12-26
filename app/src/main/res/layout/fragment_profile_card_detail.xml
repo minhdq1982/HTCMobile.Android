@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/colorPrimary">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigation_type="BACK"
+        app:title="@string/profile_card_detail_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/membership_card_height"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:paddingLeft="@dimen/margin_padding_1x"
+                android:paddingRight="@dimen/margin_padding_1x" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding_1_2x">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_padding_1_2x"
+                        android:layout_marginRight="@dimen/margin_padding_1_2x"
+                        android:orientation="horizontal">
+
+                        <com.tvo.htc.view.component.CpnButton
+                            android:id="@+id/cpnbHistory"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:btn_icon_left="@drawable/ic_card_time"
+                            app:isCenterIcon="true"
+                            app:text="@string/profile_card_detail_history"
+                            app:type="TRANSPARENT_WHITE_BORDER" />
+
+                        <com.tvo.htc.view.component.CpnButton
+                            android:id="@+id/cpnbDeleteCard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_padding_1x"
+                            android:layout_weight="1"
+                            app:btn_icon_left="@drawable/ic_card_trash"
+                            app:isCenterIcon="true"
+                            app:text="@string/profile_card_detail_delete_card"
+                            app:type="TRANSPARENT_WHITE_BORDER" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                        android:text="@string/home_card_info"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/margin_padding_0_5x"
+                            android:layout_marginRight="@dimen/margin_padding_0_5x"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_point"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/margin_padding_1x">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/profile_card_detail_point"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvPoint"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/hyundai_sans_vn_head_office_regular"
+                                android:gravity="bottom|center"
+                                android:textColor="@color/colorPoint"
+                                android:textSize="@dimen/text_size_24"
+                                tools:text="200" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_padding_0_5x"
+                            android:layout_marginRight="@dimen/margin_padding_0_5x"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_point"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/margin_padding_1x">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/profile_card_detail_value"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/hyundai_sans_vn_head_office_regular"
+                                android:gravity="bottom|center"
+                                android:textColor="@color/colorPoint"
+                                android:textSize="@dimen/text_size_24"
+                                tools:text="150" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/margin_padding_0_5x"
+                            android:layout_marginLeft="@dimen/margin_padding_0_5x"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_point"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/margin_padding_1x">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/profile_card_detail_balance"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvBalance"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/hyundai_sans_vn_head_office_regular"
+                                android:gravity="bottom|center"
+                                android:textColor="@color/colorPoint"
+                                android:textSize="@dimen/text_size_24"
+                                tools:text="150" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_card_detail_date_active"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvCarDateActive"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_0_2x"
+                                android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_17"
+                                android:textStyle="bold"
+                                tools:text="12/12/1222" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_card_detail_date_end"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvDateEndGrade"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_0_2x"
+                                android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_17"
+                                android:textStyle="bold"
+                                tools:text="12/12/1222" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:gravity="left|center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/profile_card_detail_agency_register"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvAgencyRegister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_0_5x"
+                            android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_17"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvAgencyAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_0_5x"
+                            android:textColor="@color/colorWhite80" />
+
+                        <TextView
+                            android:id="@+id/tvAgencyContact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_0_5x"
+                            android:textColor="@color/colorWhite80" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_0_8x"
+                    android:layout_marginTop="@dimen/margin_padding_1_2x"
+                    android:background="@color/colorLineDetailsCard" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding_1_2x">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                        android:text="@string/profile_card_detail_info_car"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvCarName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/text_size_17"
+                                android:textStyle="bold"
+                                tools:text="Grand i10 2017" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_0_5x"
+                                android:gravity="left|center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/profile_card_detail_car_vin"
+                                    android:textColor="@color/colorWhite80" />
+
+                                <TextView
+                                    android:id="@+id/tvVIN"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_0_5x"
+                                    android:textColor="@color/white"
+                                    tools:text="12345678901234567" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/profile_card_detail_car_licese_plates"
+                                    android:textColor="@color/colorWhite80" />
+
+
+                                <TextView
+                                    android:id="@+id/tvCarLicensePlate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_0_5x"
+                                    android:textColor="@color/colorWhite"
+                                    tools:text="30a-dididi" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/profile_card_detail_car_date_purchase"
+                                    android:textColor="@color/colorWhite80" />
+
+                                <TextView
+                                    android:id="@+id/tvCarDatePurchase"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_0_5x"
+                                    android:textColor="@color/colorWhite"
+                                    tools:text="12/12/2019" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imCarRegister"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_0_8x"
+                    android:layout_marginTop="@dimen/margin_padding_1_2x"
+                    android:background="@color/colorLineDetailsCard" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding_1_2x">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                        android:text="@string/profile_card_detail_list_benefit"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height"
+                        android:layout_marginTop="@dimen/margin_padding_1_2x"
+                        android:background="@color/colorLineDetailsCard" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        tools:listitem="@layout/item_inner_benefit_detail" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigation_type="BACK"
+        app:title="@string/survey_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <com.tvo.htc.view.component.CpnSurveyViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llBottom"
+            android:clipToPadding="false"
+            android:paddingLeft="@dimen/survey_item_padding"
+            android:paddingRight="@dimen/survey_item_padding" />
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <com.tvo.htc.view.component.CpnIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_default_1_7x"
+                android:layout_marginBottom="@dimen/margin_padding_default_1_7x"
+                app:icCurrent="@drawable/ic_indicator_survey_current"
+                app:icNormal="@drawable/ic_indicator_survey_normal"
+                app:icSelected="@drawable/ic_indicator_survey_selected"
+                app:isClickItem="true"
+                app:isUseState="true" />
+
+
+            <LinearLayout
+                android:id="@+id/frBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.tvo.htc.view.component.CpnButton
+                    android:id="@+id/cpnbPrevious"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:btn_icon_left="@drawable/ic_arrow_left_black"
+                    app:text="@string/service_make_appointment_previous"
+                    app:type="TRANSPARENT" />
+
+                <com.tvo.htc.view.component.CpnButton
+                    android:id="@+id/cpnbNext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    app:btn_icon_right="@drawable/ic_arrow_right_white"
+                    app:text="@string/survey_btn_next"
+                    app:type="BLUE2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/frTouch"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <FrameLayout
+            android:id="@+id/flFirstShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/item_survey_first_show" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

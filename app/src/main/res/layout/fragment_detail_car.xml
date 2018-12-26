@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_detail_car_item_width">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bg_top_detail_car" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.tvo.htc.view.component.CpnNavigationBar
+                                android:id="@+id/navigationBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:backgroundTransparent="true"
+                                app:navigation_type="BACK"
+                                app:tintBack="@color/colorPrimary"/>
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/viewPagerSlideCar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom|center_horizontal"
+                                android:layout_margin="@dimen/margin_padding_2_5x" />
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cardDownloadCatalog"
+                            android:layout_width="@dimen/width_cpn_button_detail_car"
+                            android:layout_height="@dimen/height_cpn_button_detail_car"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginLeft="@dimen/margin_padding_0_1x"
+                            android:layout_marginTop="@dimen/margin_padding_0_1x"
+                            android:layout_marginRight="@dimen/margin_padding_1_2x"
+                            android:layout_marginBottom="@dimen/margin_padding_1_2x"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="@dimen/margin_padding_0_1x"
+                            app:cardElevation="@dimen/margin_padding_0_4x">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/margin_padding_0_5x">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_0_5x"
+                                    android:src="@drawable/ic_download" />
+
+                                <TextView
+                                    android:id="@+id/tvCatalogState"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_1x"
+                                    android:fontFamily="@font/hyundai_sans_vn_head_office_regular"
+                                    android:text="@string/detail_car_download"
+                                    android:textColor="@color/colorText" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_padding_0_8x">
+
+                        <TextView
+                            android:id="@+id/tvCarName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_24"
+                            android:textStyle="bold"
+                            tools:text="Car abcd e" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_1_2x">
+
+                            <LinearLayout
+                                android:id="@+id/llCompare"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_detail_car_compare" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_padding_1x"
+                                    android:text="@string/detail_car_compare"
+                                    android:textColor="@color/colorTextTile" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llRegistration"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_detail_car_register" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_padding_1x"
+                                    android:text="@string/detail_car_register"
+                                    android:textColor="@color/colorTextTile" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llAdvicePrice"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_detail_car_price" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_padding_1x"
+                                    android:text="@string/detail_car_price"
+                                    android:textColor="@color/colorTextTile" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/bgStatusBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0"
+                    android:background="@color/colorAccent" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/reTitleOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_tab_height"
+                    android:background="@color/colorAccent"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_padding_1x">
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <FrameLayout
+                android:id="@+id/flCatalog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:visibility="gone">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                            android:padding="@dimen/margin_padding_1_2x"
+                            android:text="@string/detail_car_catalog"
+                            android:textColor="@color/colorTextTile"
+                            android:textSize="@dimen/text_size_24" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                            android:paddingLeft="@dimen/margin_padding_1_2x"
+                            android:paddingBottom="@dimen/margin_padding_0_8x"
+                            android:text="@string/detail_car_catalog"
+                            android:textColor="@color/colorTextTile"
+                            android:textSize="@dimen/text_size_17" />
+
+                        <com.tvo.htc.view.component.CpnSpinner
+                            android:id="@+id/cpnSpinVersion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_padding_1_2x"
+                            android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                            app:sp_background="@drawable/bg_spinner_detail_car"
+                            app:sp_paddingLeft="@dimen/margin_padding_1_2x" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/reCatalog"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </FrameLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_0_5x">
+
+                <com.tvo.htc.view.component.CpnSpinner
+                    android:id="@+id/spinerAgency"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_padding_0_5x"
+                    android:textStyle="bold"
+                    app:sp_background="@drawable/bg_edit_text_search"
+                    app:sp_paddingLeft="@dimen/margin_padding_1x" />
+
+                <com.tvo.htc.view.component.CpnSpinner
+                    android:id="@+id/spinerListCar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_padding_0_5x"
+                    app:sp_background="@drawable/bg_edit_text_search"
+                    app:sp_paddingLeft="@dimen/margin_padding_1x" />
+
+                <com.tvo.htc.view.component.CpnSpinner
+                    android:id="@+id/spinerLevels"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_padding_0_5x"
+                    app:sp_background="@drawable/bg_edit_text_search"
+                    app:sp_paddingLeft="@dimen/margin_padding_1x" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMaintenance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_padding_1x"
+                    android:layout_marginTop="@dimen/margin_padding_1_5x"
+                    android:text="@string/maintenance_level_items"
+                    android:textSize="@dimen/text_size_17" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_padding_0_1x"
+                    android:background="@color/colorMaintenanceBackground" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <LinearLayout
+                    android:id="@+id/llTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="@dimen/margin_padding_1_5x"
+                    android:paddingTop="@dimen/margin_padding_1_5x"
+                    android:paddingRight="@dimen/margin_padding_1_5x">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/maintenance_level_total"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/colorMaintenanceTotal"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_padding_1_5x"
+                    android:text="@string/maintenance_level_vat"
+                    android:textColor="@color/colorVAT" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/maintenance_empty" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

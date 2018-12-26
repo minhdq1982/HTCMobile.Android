@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTransparent="true"
+        app:navigation_type="BACK"
+        app:title="@string/profile_edit_title" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/sTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_top"
+            android:paddingLeft="@dimen/profile_margin_left_avatar" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/profile_top"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:id="@+id/sBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_padding_default_1_7x"
+                android:paddingTop="@dimen/margin_padding_3x"
+                android:paddingRight="@dimen/margin_padding_default_1_7x"
+                android:paddingBottom="@dimen/margin_padding_default_1_7x">
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:lines="1"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textPersonName"
+                    android:nextFocusRight="@+id/editBirthDay"
+                    android:nextFocusDown="@+id/editBirthDay"
+                    android:nextFocusForward="@+id/editBirthDay"
+                    app:hint="@string/profile_info_hint_name"
+                    app:icon="@drawable/ic_info_name" />
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/editPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="text"
+                    app:enable="false"
+                    app:hint="@string/profile_edit_hint_phone"
+                    app:icon="@drawable/ic_info_phone" />
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/editBirthDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="date"
+                    android:lines="1"
+                    android:nextFocusDown="@+id/editIdentifyId"
+                    app:hint="@string/profile_edit_hint_brithday"
+                    app:icon="@drawable/ic_info_date_of_birth" />
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/editIdentifyId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:nextFocusDown="@+id/editEmail"
+                    app:hint="@string/profile_edit_hint_identify_id"
+                    app:icon="@drawable/ic_info_certificate" />
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:nextFocusDown="@+id/editAddress"
+                    app:hint="@string/profile_edit_hint_email"
+                    app:icon="@drawable/ic_info_email" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:background="@drawable/bg_edit_text"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_info_address" />
+
+                    <com.tvo.htc.view.component.CpnSpinner
+                        android:id="@+id/spCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_padding_1_5x" />
+                </LinearLayout>
+
+
+                <com.tvo.htc.view.component.CpnButton
+                    android:id="@+id/cpnbSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_1_5x"
+                    app:text="@string/profile_edit_save"
+                    app:type="BLUE" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <FrameLayout
+            android:id="@+id/flChangeAvatar"
+            android:layout_width="@dimen/profile_avatar_container_size"
+            android:layout_height="@dimen/profile_avatar_container_size"
+            android:layout_marginLeft="@dimen/margin_padding_1_5x"
+            android:layout_marginTop="@dimen/profile_avatar_margin"
+            app:layout_anchor="@+id/sTop"
+            app:layout_anchorGravity="center">
+
+            <com.tvo.htc.view.component.CircleImageView
+                android:id="@+id/cpnbCircleImage"
+                android:layout_width="@dimen/profile_avatar_size"
+                android:layout_height="@dimen/profile_avatar_size"
+                android:paddingBottom="@dimen/margin_padding_0_5x"
+                android:src="@drawable/img_avatar_default"
+                app:civ_border_color="@color/colorWhite" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/ic_pick_image" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

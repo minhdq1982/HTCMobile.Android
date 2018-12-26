@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/colorPrimary">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigation_type="BACK"
+        app:backgroundTransparent="true"
+        app:title="@string/login_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_padding_4x"
+        android:paddingRight="@dimen/margin_padding_4x">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/margin_padding_0_8x"
+            android:layout_marginTop="@dimen/margin_padding_2x"
+            android:text="@string/login_tips"
+            android:textColor="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_4x"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawablePadding="@dimen/margin_padding_0_5x"
+                        android:gravity="center"
+                        android:maxLength="11"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:imeOptions="actionDone"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/margin_padding_3x"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorHintText"
+                        android:textSize="@dimen/text_size_20"
+                        tools:ignore="TextFields" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:background="@color/colorWhite" />
+            </LinearLayout>
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_2x"
+                app:text="@string/login"
+                app:type="WHITE" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

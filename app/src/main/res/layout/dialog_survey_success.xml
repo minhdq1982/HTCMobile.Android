@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_2x"
+            android:src="@drawable/ic_survey_success" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding_default_1_7x"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_padding_default_1_7x"
+            android:paddingRight="@dimen/margin_padding_default_1_7x">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/survey_success_title"
+                android:textSize="@dimen/text_size_17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                android:gravity="center"
+                android:text="@string/survey_dialog_success_message"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_1_5x"
+            android:layout_marginBottom="@dimen/margin_padding_1_5x"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbOk"
+                android:layout_width="@dimen/survey_width_button"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:text="@string/survey_dialog_success_ok"
+                app:type="BLUE" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

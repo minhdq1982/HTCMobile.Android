@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_padding_1_5x"
+        android:background="@color/colorLine"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/margin_padding_1_5x">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_padding_1_5x"
+                android:paddingRight="@dimen/margin_padding_1_5x">
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/editPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:lines="1"
+                    app:enable="false"
+                    app:hint="@string/profile_info_hint_phone"
+                    app:icon="@drawable/ic_info_phone" />
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/editBirthDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:lines="1"
+                    app:enable="false"
+                    app:hint="@string/profile_info_hint_brithday"
+                    app:icon="@drawable/ic_info_date_of_birth" />
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/editIdentifyId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="12"
+                    app:enable="false"
+                    app:hint="@string/profile_info_hint_identify_id"
+                    app:icon="@drawable/ic_info_certificate" />
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    app:enable="false"
+                    app:hint="@string/profile_info_hint_email"
+                    app:icon="@drawable/ic_info_email" />
+
+                <com.tvo.htc.view.component.CpnEditText
+                    android:id="@+id/editAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:enable="false"
+                    app:hint="@string/profile_info_hint_adress"
+                    app:icon="@drawable/ic_info_address" />
+
+                <LinearLayout
+                    android:id="@+id/llEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:paddingTop="@dimen/margin_padding_1x">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_profile_edit" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_padding_1_5x"
+                        android:text="@string/profile_info_edit"
+                        android:textColor="@color/colorTextEdit" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

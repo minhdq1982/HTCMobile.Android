@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#002856</color>
+    <color name="colorPrimaryDark">#002856</color>
+    <color name="colorAccent">#0099ff</color>
+    <color name="colorBackgroundSelectedHistoryItem">#4d0099ff</color>
+    <color name="colorTransparent">@android:color/transparent</color>
+    <color name="colorBlurSearch">#88000000</color>
+    <color name="colorMaintenanceBackground">#E3DCD4</color>
+    <color name="colorBackgroundList">#E3DCD4</color>
+    <color name="colorWhite">@android:color/white</color>
+    <color name="colorBlack">@android:color/black</color>
+    <color name="colorNearBlack">#111111</color>
+    <color name="colorTab">#001124</color>
+    <color name="colorTextTab">#99a0a7</color>
+    <color name="colorTextTabSelected">#00AAD2</color>
+    <color name="colorText">#333333</color>
+    <color name="colorTextSub">#999999</color>
+    <color name="colorTextTitleEdt">#444444</color>
+    <color name="colorBorder">#CCCCCC</color>
+    <color name="colorEditText">#111111</color>
+    <color name="colorLine">#eeeeee</color>
+    <color name="colorLine2">#DCDCDC</color>
+    <color name="colorTextGray">#c1bfbf</color>
+    <color name="colorGray">#444444</color>
+    <color name="colorVAT">#999999</color>
+    <color name="colorTextTitleNews">#2d267c</color>
+    <color name="colorBgNotify">#D9302A</color>
+    <color name="colorHomeTitle">#040d51</color>
+    <color name="colorHintText">#9cabbd</color>
+    <color name="colorCardPlatinum">#DABF7B</color>
+    <color name="colorDefaultImage">#EAEAEA</color>
+    <color name="colorMaintenanceTotal">#D9302A</color>
+    <color name="colorTime">#E1DDDB</color>
+
+    <color name="colorTabButton">#1a1a1a</color>
+    <color name="colorTabButtonSelected">#f5f4f2</color>
+    <color name="colorAddButtonBackground">#0099ff</color>
+
+    <color name="colorServiceListNormal">#ffffff</color>
+    <color name="colorServiceListSelected">#EEEEEE</color>
+    <color name="colorRed">#b4180a</color>
+    <color name="colorHomePromotionTitle">#ff0000</color>
+
+    <color name="colorNotificationDate">#FBFBFB</color>
+    <color name="colorNotificationRead">#ffffff</color>
+    <color name="colorNotificationUnRead">#F5F3F2</color>
+    <color name="colorNotificationDetailTitle">#1260AB</color>
+    <color name="colorResentCode">#D0D0D0</color>
+    <color name="colorBackgroundTitleHistory">#ECECF0</color>
+    <color name="colorSurveySubText">#B9B9B9</color>
+    <color name="colorBgCarComparison">#c0c0c0</color>
+    <color name="colorCarName">#365e7c</color>
+    <color name="colorBackgroundTitleChangeAvatar">#F2F2F2</color>
+    <color name="colorTextTile">#111111</color>
+    <color name="colorBackgroundBanner">#88000000</color>
+
+    <color name="colorTabNone">#33A8A8A8</color>
+    <color name="colorBackgroundSupport">#E5E5E5</color>
+    <color name="colorTextBuyCar">#e6ffffff</color>
+
+    <color name="colorAddCard">#002856</color>
+    <color name="colorHomeSpace">#33000000</color>
+    <color name="colorTextNone">#99A0A7</color>
+
+    <color name="colorButtonBackgroundBlue2">#00AAD2</color>
+
+    <color name="colorBackgroundHeaderAppoitment">#00AAD2</color>
+    <color name="colorSurveySubText80">#ccffffff</color>
+
+    <color name="colorTextPlatinum">#ffffff</color>
+    <color name="colorHideTextPlatinum">#6E530B</color>
+    <color name="colorHideTextGold">#111111</color>
+    <color name="colorHideTextSilver">#555555</color>
+    <color name="colorTextOtherCard">#000</color>
+    <color name="colorBackgroundBenefit">#EEEEEE</color>
+    <color name="colorPoint">#DABF7B</color>
+    <color name="colorWhite80">#b3ffffff</color>
+
+    <color name="colorLineDetailsCard">#0dffffff</color>
+    <color name="colorBackgroundSpec">#E3DCD4</color>
+    <color name="colorBackgroundSpecTitle">#F5F3F2</color>
+    <color name="colorLineSpecDetail">#E3DCD4</color>
+    <color name="colorWhite40">#73ffffff</color>
+    <color name="colorTextEdit">#00AAD2</color>
+    <color name="colorTabSelected">#30D8FF</color>
+    <color name="colorBgCopyright">#002045</color>
+    <color name="colorHeaderSurvey">#2600AAD2</color>
+    <color name="colorBackgroundSurvey">#EEEEEE</color>
+    <color name="colorTipSurvey">#D9302A</color>
+
+    <color name="colorWhiteBlur">#99FFFFFF</color>
+    <color name="colorTitleSurvey">#00AAD2</color>
+    <color name="colorBackButton">#E5E5E5</color>
+    <color name="colorOptionCar">#00AAD2</color>
+    <color name="colorOverlay">#80000000</color>
+    <color name="colorBackgroundCrop">#000</color>
+    <color name="colorSurveyBackgroundSell">#00AAD2</color>
+    <color name="colorSurveyBackgroundService">#D9AA4E</color>
+    <color name="colorSurveyTextSell">#002856</color>
+    <color name="colorMakeSurvey">#BA283D</color>
+</resources>

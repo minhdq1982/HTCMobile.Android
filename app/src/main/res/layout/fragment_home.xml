@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/ivGridBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/llHomeContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="62dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:id="@+id/flLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_login_banner_height"
+                            android:background="@drawable/bg_home_banner"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/margin_padding_1_5x"
+                            android:paddingRight="@dimen/margin_padding_1_5x">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_0_5x"
+                                android:gravity="center"
+                                android:lineSpacingExtra="@dimen/margin_padding_0_3x"
+                                android:lineSpacingMultiplier="1.15"
+                                android:text="@string/home_login_now_des"
+                                android:textColor="@color/colorWhite" />
+
+                            <com.tvo.htc.view.component.CpnButton
+                                android:id="@+id/cpnbLogin"
+                                android:layout_width="@dimen/width_cpn_button"
+                                android:layout_height="@dimen/height_home_login_bt"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/margin_padding_2x"
+                                app:text="@string/home_login"
+                                app:type="WHITE" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivCloseBannerLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="@dimen/margin_padding_1x"
+                            android:src="@drawable/ic_close" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMembershipCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1x"
+                        android:layout_marginBottom="@dimen/margin_padding_1x"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vpCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/membership_card_height"
+                            android:layout_gravity="center"
+                            android:clipToPadding="false"
+                            android:paddingLeft="@dimen/margin_padding_1x"
+                            android:paddingRight="@dimen/margin_padding_1x" />
+
+                        <TextView
+                            android:id="@+id/tvAddCardMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_padding_4x"
+                            android:layout_marginRight="@dimen/margin_padding_4x"
+                            android:layout_marginBottom="@dimen/margin_padding_1x"
+                            android:gravity="center"
+                            android:text="@string/home_add_card_message"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/llCardAction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/ivAdd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add_card_home" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_padding_0_5x"
+                                    android:text="@string/home_add_card"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/ivBenefit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_benefit" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_padding_0_5x"
+                                    android:text="@string/home_benefit"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/ivCardInfo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_card_info" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_padding_0_5x"
+                                    android:text="@string/home_card_info"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1x"
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:padding="@dimen/margin_padding_0_5x" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvGroupNews"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_0_5x"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                        <com.tvo.htc.view.component.CpnBannerSurvey
+                            android:id="@+id/cpnBannerSurvey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_1x"
+                            android:paddingLeft="@dimen/margin_padding_1x"
+                            android:paddingRight="@dimen/margin_padding_1x"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_1x"
+                            android:background="@color/colorBgCopyright"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/margin_padding_1_5x"
+                            android:paddingTop="@dimen/margin_padding_1_5x"
+                            android:paddingRight="@dimen/margin_padding_1_5x"
+                            android:paddingBottom="@dimen/margin_padding_2_5x">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/home_hotline"
+                                    android:textColor="@color/colorWhite" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/home_follow_us"
+                                    android:textColor="@color/colorWhite" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_0_5x"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvHotline"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="1900.56.1212"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/text_size_22" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/ivFollowFacebook"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_follow_facebook" />
+
+                                    <ImageView
+                                        android:id="@+id/ivFollowYoutube"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/margin_padding_1x"
+                                        android:src="@drawable/ic_follow_youtube" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_1x"
+                                android:gravity="center_horizontal"
+                                android:text="@string/home_copyright"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/text_size_12" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/flHomeNavigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@color/colorPrimary" />
+
+        <com.tvo.htc.view.component.CpnNavigationBar
+            android:id="@+id/navigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigation_type="LOGO" />
+
+    </FrameLayout>
+</FrameLayout>

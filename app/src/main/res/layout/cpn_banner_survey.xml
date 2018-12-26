@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_banner_survey"
+    android:minHeight="@dimen/height_banner_survey"
+    app:cardBackgroundColor="@color/colorSurveyBackgroundSell"
+    app:cardCornerRadius="@dimen/border_radius">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_padding_1_5x"
+            android:paddingTop="@dimen/margin_padding_2x"
+            android:paddingBottom="@dimen/margin_padding_2x">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/banner_survey_name_sell"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:text="@string/banner_survey_des"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="@dimen/width_make_survey_button"
+                android:layout_height="@dimen/height_make_survey_button"
+                android:background="@color/colorMakeSurvey"
+                android:gravity="center"
+                android:text="@string/banner_survey_make_survey"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/width_make_survey_button"
+            android:layout_marginTop="@dimen/margin_padding_3_5x"
+            android:layout_marginRight="-45dp"
+            android:layout_marginBottom="-35dp"
+            android:duplicateParentState="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="happy_gift.json"
+            app:lottie_loop="true" />
+    </FrameLayout>
+</android.support.v7.widget.CardView>

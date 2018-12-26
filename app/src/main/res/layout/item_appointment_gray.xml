@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLine"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_padding_0_5x">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_padding_0_5x"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTextSub"
+                android:gravity="center"
+                android:padding="@dimen/margin_padding_0_2x"
+                android:textColor="@color/colorBorder"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDate"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:padding="@dimen/margin_padding_1x"
+                android:textColor="@color/colorTextSub"
+                android:textSize="@dimen/text_size_16" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_0_5x"
+            android:layout_weight="2"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_padding_1x">
+
+            <TextView
+                android:id="@+id/tvServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/colorTextSub"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCarName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:drawableLeft="@drawable/ic_steering_wheel"
+                android:drawablePadding="@dimen/margin_padding_0_5x"
+                android:drawableTint="@color/colorTextSub"
+                android:lines="1"
+                android:textColor="@color/colorTextSub" />
+
+            <TextView
+                android:id="@+id/tvAgencyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:layout_marginBottom="@dimen/margin_padding_1x"
+                android:drawableLeft="@drawable/ic_car_parking"
+                android:drawablePadding="@dimen/margin_padding_0_5x"
+                android:drawableTint="@color/colorTextSub"
+                android:lines="1"
+                android:textColor="@color/colorTextSub" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

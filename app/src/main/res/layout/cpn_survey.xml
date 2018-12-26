@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_padding_1_2x"
+    android:paddingTop="@dimen/margin_padding_0_9x"
+    android:paddingRight="@dimen/margin_padding_1_2x">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_padding_0_5x"
+        tools:text="Question" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_0_5x"
+        android:textColor="@color/colorSurveySubText"
+        tools:text="Description of answer" />
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_marginTop="@dimen/margin_padding_0_6x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

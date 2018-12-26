@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_padding_1x">
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_item_top_height"
+        android:layout_marginLeft="@dimen/margin_padding_1x"
+        android:layout_marginRight="@dimen/margin_padding_1x"
+        android:layout_weight="1"
+        android:background="@color/colorDefaultImage"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvTimeNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_1x"
+        android:layout_marginTop="@dimen/margin_padding_0_5x"
+        android:layout_marginRight="@dimen/margin_padding_1x"
+        android:textColor="@color/colorTextGray"
+        android:textSize="@dimen/text_size_13" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_1x"
+        android:layout_marginTop="@dimen/margin_padding_0_2x"
+        android:layout_marginRight="@dimen/margin_padding_1x"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/colorTextTile"
+        android:textSize="@dimen/text_size_20"
+        android:textStyle="bold"
+        tools:text="Sample text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_0_7x"
+        android:layout_marginTop="@dimen/margin_padding_1x"
+        android:background="@color/colorServiceListSelected" />
+</LinearLayout>

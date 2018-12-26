@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_1_5x"
+                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                android:layout_marginRight="@dimen/margin_padding_1_5x"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/car_height"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_1_5x"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorTextTile"
+                    android:textSize="@dimen/text_size_17"
+                    android:textStyle="bold"
+                    tools:text="Accent" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_1x"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_car_version" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_1_5x"
+                android:layout_marginRight="@dimen/margin_padding_1_5x"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:orientation="horizontal">
+
+                <com.tvo.htc.view.component.CpnButton
+                    android:id="@+id/cpnbCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:text="@string/dlg_cancel"
+                    app:type="GRAY" />
+
+                <com.tvo.htc.view.component.CpnButton
+                    android:id="@+id/cpnbDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_1_5x"
+                    android:layout_weight="1"
+                    app:text="@string/dlg_done"
+                    app:type="BLUE" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

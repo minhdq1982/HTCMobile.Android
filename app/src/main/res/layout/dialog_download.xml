@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundTitleChangeAvatar"
+            android:paddingLeft="@dimen/margin_padding_1x"
+            android:paddingTop="@dimen/margin_padding_1_5x"
+            android:paddingRight="@dimen/margin_padding_1x"
+            android:paddingBottom="@dimen/margin_padding_1_5x"
+            android:text="@string/dialog_download_title"
+            android:textSize="@dimen/text_size_17"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_padding_default_1_7x">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:max="100"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCurrentProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="0%" />
+
+
+                <TextView
+                    android:id="@+id/tvCurrentKb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Downloading..." />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding_default_1_7x"
+            android:gravity="center">
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbCancel"
+                android:layout_width="@dimen/downloadDialogButtonWidth"
+                android:layout_height="@dimen/downloadDialogButtonHeight"
+                app:text="@string/dialog_download_cancel"
+                app:type="GRAY" />
+
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbOpen"
+                android:layout_width="@dimen/downloadDialogButtonWidth"
+                android:layout_height="@dimen/downloadDialogButtonHeight"
+                android:layout_marginLeft="@dimen/margin_padding_default_1_7x"
+                android:visibility="gone"
+                app:text="@string/dialog_download_open"
+                app:type="BLUE2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

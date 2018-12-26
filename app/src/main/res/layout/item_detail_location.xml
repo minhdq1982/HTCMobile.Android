@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_padding_0_5x">
+
+    <TextView
+        android:id="@+id/txtTitleLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_detail_location_title"
+        android:textColor="@color/colorNearBlack"
+        android:textSize="@dimen/text_size_17"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtAddressLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitleLocation"
+        android:layout_marginEnd="@dimen/margin_padding_4x"
+        android:layout_marginRight="@dimen/margin_padding_4x"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/item_detail_location_address"
+        android:textColor="@color/colorTextTitleEdt"
+        android:textSize="@dimen/text_size_13"
+        tools:ignore="TextViewEdits" />
+
+    <LinearLayout
+        android:id="@+id/layoutHotlineCare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAddressLocation"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/hotlineCare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_1x"
+            android:layout_weight="1.8"
+            android:text="@string/map_hotline1"
+            android:textColor="@color/colorTextTitleEdt" />
+
+        <TextView
+            android:id="@+id/txtHotlineCare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_1x"
+            android:layout_weight="1.2"
+            android:text="@string/item_detail_location_phone"
+            android:textColor="@color/colorButtonBackgroundBlue2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutHotlineShop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHotlineCare"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/hotlineShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_0_5x"
+            android:layout_weight="1.8"
+            android:text="@string/map_hotline2"
+            android:textColor="@color/colorTextTitleEdt" />
+
+        <TextView
+            android:id="@+id/txtHotlineShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_0_5x"
+            android:layout_weight="1.2"
+            android:text="@string/item_detail_location_phone"
+            android:textColor="@color/colorButtonBackgroundBlue2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutHotlineService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHotlineShop"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/hotlineService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_0_5x"
+            android:layout_weight="1.8"
+            android:text="@string/map_hotline3"
+            android:textColor="@color/colorTextTitleEdt" />
+
+        <TextView
+            android:id="@+id/txtHotlineService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_0_5x"
+            android:layout_weight="1.2"
+            android:text="@string/item_detail_location_phone"
+            android:textColor="@color/colorButtonBackgroundBlue2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtWebsiteLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHotlineService"
+        android:layout_marginTop="@dimen/margin_padding_1x"
+        android:text="@string/item_detail_location_website"
+        android:textColor="@color/colorTextTabSelected"
+        android:textSize="@dimen/text_size_15" />
+
+</RelativeLayout>

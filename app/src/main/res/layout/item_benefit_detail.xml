@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_padding_1_5x"
+    android:paddingBottom="@dimen/margin_padding_1_5x">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_benefit_local_agency" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAgencyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_0_5x"
+            android:layout_marginBottom="@dimen/margin_padding_0_8x"
+            android:textStyle="bold"
+            android:text="Hyundai giải phóng"
+            android:textColor="@color/colorNearBlack"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/tvAgencyAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_0_5x"
+            android:layout_marginBottom="@dimen/margin_padding_0_6x"
+            android:text="Số 15 ngọc hồi"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tvAgencyContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_0_5x"
+            android:text="0123456789"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+</LinearLayout>

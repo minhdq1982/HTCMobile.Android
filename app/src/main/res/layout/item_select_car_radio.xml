@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_padding_0_5x"
+    android:layout_marginBottom="@dimen/margin_padding_0_5x"
+    android:layout_marginLeft="@dimen/margin_padding_0_2x"
+    android:layout_marginRight="@dimen/margin_padding_0_2x"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/btnRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/bg_radio"
+        android:clickable="false"
+        android:enabled="false"
+        android:text="@null" />
+
+    <TextView
+        android:id="@+id/txtRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/select_car_radio_title"
+        android:textColor="@color/colorNearBlack" />
+
+</LinearLayout>

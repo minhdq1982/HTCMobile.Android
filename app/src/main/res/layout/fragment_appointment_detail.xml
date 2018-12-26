@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigation_type="BACK"
+        app:title="@string/appointment_detail_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_padding_1_5x">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/appointment_detail_customer_title"
+                android:textSize="@dimen/text_size_17"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/make_appointment_preview_customer_full_name" />
+
+                <TextView
+                    android:id="@+id/tvCustomerFullName"
+                    style="@style/AppointmentDetail.TextValue"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/make_appointment_preview_customer_phone" />
+
+                <TextView
+                    android:id="@+id/tvCustomerPhone"
+                    style="@style/AppointmentDetail.TextValue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/make_appointment_preview_customer_email" />
+
+                <TextView
+                    android:id="@+id/tvCustomerEmail"
+                    style="@style/AppointmentDetail.TextValue"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                android:text="@string/appointment_detail_info_title"
+                android:textSize="@dimen/text_size_17"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/appointment_detail_info_service" />
+
+                <TextView
+                    android:id="@+id/tvServices"
+                    style="@style/AppointmentDetail.TextValue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/appointment_detail_car_category" />
+
+                <TextView
+                    android:id="@+id/tvCarCategory"
+                    style="@style/AppointmentDetail.TextValue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/appointment_detail_car_version" />
+
+                <TextView
+                    android:id="@+id/tvCarVersion"
+                    style="@style/AppointmentDetail.TextValue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/appointment_detail_car_license_plate" />
+
+                <TextView
+                    android:id="@+id/tvCarLicensePlate"
+                    style="@style/AppointmentDetail.TextValue"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/appointment_detail_time" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    style="@style/AppointmentDetail.TextValue"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/appointment_detail_city" />
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    style="@style/AppointmentDetail.TextValue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/appointment_detail_agency" />
+
+                <TextView
+                    android:id="@+id/tvAgency"
+                    style="@style/AppointmentDetail.TextValue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/appointment_detail_service_staff" />
+
+                <TextView
+                    android:id="@+id/tvServiceStaff"
+                    style="@style/AppointmentDetail.TextValue"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1x">
+
+                <TextView
+                    style="@style/AppointmentDetail.TextInfo"
+                    android:text="@string/appointment_detail_note" />
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    style="@style/AppointmentDetail.TextValue"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_0_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:layout_marginBottom="@dimen/margin_padding_4x"
+                android:background="@color/colorLine" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

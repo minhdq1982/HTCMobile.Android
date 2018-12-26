@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/colorPrimary">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTransparent="true"
+        app:navigation_type="BACK"
+        app:title="@string/profile_add_card_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/margin_padding_1_5x">
+
+            <ImageView
+                android:id="@+id/imPreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_membership_add" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sBottom"
+                android:gravity="center"
+                android:text="@string/profile_add_card_no"
+                android:textColor="@color/colorTextTile"
+                android:textSize="@dimen/text_size_18" />
+
+            <LinearLayout
+                android:id="@+id/sBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_padding_2_5x"
+                android:paddingRight="@dimen/margin_padding_2_5x">
+
+                <EditText
+                    android:id="@+id/editCardNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:fontFamily="@font/hyundai_sans_vn_text_office_bold"
+                    android:gravity="center"
+                    android:hint="@string/profile_add_card_add_hint"
+                    android:imeOptions="actionDone"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="@dimen/margin_padding_0_5x"
+                    android:layout_marginLeft="@dimen/margin_padding_2x"
+                    android:layout_marginRight="@dimen/margin_padding_2x"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextTile"
+                    android:textSize="@dimen/text_size_26" />
+
+                <requestFocus />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_padding_0_1x"
+                    android:layout_marginLeft="@dimen/margin_padding_2x"
+                    android:layout_marginRight="@dimen/margin_padding_2x"
+                    android:background="@color/colorTextTile" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.tvo.htc.view.component.CpnButton
+            android:id="@+id/cpnbAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="@dimen/margin_padding_2x"
+            app:text="@string/profile_add_card_add"
+            app:type="BLUE2" />
+
+    </LinearLayout>
+
+</LinearLayout>

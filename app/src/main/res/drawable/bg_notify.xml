@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomLeftRadius="@dimen/border_radius_notify"
+        android:bottomRightRadius="@dimen/border_radius_notify"
+        android:topLeftRadius="@dimen/border_radius_notify"
+        android:topRightRadius="@dimen/border_radius_notify" />
+    <solid android:color="@color/colorBgNotify" />
+</shape>

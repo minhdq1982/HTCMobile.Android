@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgNews"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/news_item_top_height"
+            android:layout_margin="@dimen/margin_padding_0_5x"
+            android:background="@color/colorDefaultImage"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_news_facebook"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/margin_padding_1x"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_0_5x"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/margin_padding_0_5x"
+        android:maxLines="2"
+        android:padding="@dimen/margin_padding_0_5x"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_20"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTimeNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_0_5x"
+        android:paddingLeft="@dimen/margin_padding_0_5x"
+        android:paddingRight="@dimen/margin_padding_0_5x"
+        android:textColor="@color/colorTextGray"
+        android:textSize="@dimen/text_size_default_14sp" />
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_padding_2x"
+        android:layout_marginBottom="@dimen/margin_padding_0_5x"
+        android:background="@color/colorLine" />
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigation_type="BACK"
+        app:title="@string/registration" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_padding_1_5x"
+            android:paddingRight="@dimen/margin_padding_1_5x">
+
+            <ImageView
+                android:id="@+id/ivCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_1_5x"
+                android:src="@drawable/ic_cars" />
+
+            <com.tvo.htc.view.component.CpnSpinner
+                android:id="@+id/spListCar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:background="@drawable/bg_spinner"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_2x"
+                android:layout_marginBottom="@dimen/margin_padding_1x"
+                android:text="@string/survey_error_answer_require"
+                android:textColor="@color/colorNearBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_title_city"
+                android:textColor="@color/colorTextTitleEdt"
+                android:textStyle="bold" />
+
+            <com.tvo.htc.view.component.CpnSpinner
+                android:id="@+id/spCity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:background="@drawable/bg_spinner" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_title_agency"
+                android:textColor="@color/colorTextTitleEdt"
+                android:textStyle="bold" />
+
+            <com.tvo.htc.view.component.CpnSpinner
+                android:id="@+id/spAgency"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:background="@drawable/bg_spinner" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_title_name"
+                android:textColor="@color/colorTextTitleEdt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:background="@drawable/bg_spinner"
+                android:hint="@string/registration_hint_name"
+                android:inputType="text"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_title_phone"
+                android:textColor="@color/colorTextTitleEdt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:background="@drawable/bg_spinner"
+                android:hint="@string/registration_hint_phone"
+                android:inputType="phone"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_title_email"
+                android:textColor="@color/colorTextTitleEdt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:background="@drawable/bg_spinner"
+                android:hint="@string/registration_hint_email"
+                android:inputType="textEmailAddress"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_title_note"
+                android:textColor="@color/colorTextTitleEdt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtNote"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:background="@drawable/bg_spinner"
+                android:gravity="top"
+                android:hint="@string/registration_hint_note"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_0_5x">
+
+                <CheckBox
+                    android:id="@+id/chkUpdateProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bg_checkbox"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_0_8x"
+                    android:text="@string/registration_tip_update_profile" />
+            </LinearLayout>
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_3x"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:background="@drawable/bg_button_press"
+                app:text="@string/registration_register" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

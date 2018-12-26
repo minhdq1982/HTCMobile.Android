@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTransparent="true"
+        app:btSettingVisibility="VISIBLE"
+        app:navigation_type="BACK"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/sTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_top"
+            android:paddingLeft="@dimen/profile_margin_left_avatar"
+            tools:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/margin_padding_1x"
+                android:padding="@dimen/margin_padding_1_5x">
+
+                <LinearLayout
+                    android:id="@+id/sLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorTransparent"
+                        android:minWidth="@dimen/margin_padding_8x"
+                        android:padding="@dimen/margin_padding_0_5x"
+                        android:singleLine="true"
+                        android:text="Đang tải"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_18"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/profile_top"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_tab_size"
+                app:tabGravity="fill"
+                app:tabIndicatorHeight="0dp"
+                app:tabPaddingBottom="-1dp"
+                app:tabPaddingEnd="-1dp"
+                app:tabPaddingStart="-1dp"
+                app:tabPaddingTop="-1dp" />
+
+            <com.tvo.htc.view.component.CpnLockableViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <com.tvo.htc.view.component.CircleImageView
+            android:id="@+id/cpnbCircleImage"
+            android:layout_width="@dimen/profile_avatar_size"
+            android:layout_height="@dimen/profile_avatar_size"
+            android:layout_marginLeft="@dimen/margin_padding_1_5x"
+            android:layout_marginTop="@dimen/profile_avatar_margin"
+            android:paddingBottom="@dimen/margin_padding_0_5x"
+            android:src="@drawable/img_avatar_default"
+            app:civ_border_color="@color/colorWhite"
+            app:layout_anchor="@id/sTop"
+            app:layout_anchorGravity="top" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

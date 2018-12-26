@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cpnbStart">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_header_survey">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_background_survey"
+                    android:background="@color/colorHeaderSurvey" />
+
+                <FrameLayout
+                    android:id="@+id/sRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/margin_padding_2_5x">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_survey_logo" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_survey_line" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_1_2x"
+                    android:layout_marginTop="@dimen/margin_padding_2x"
+                    android:layout_toLeftOf="@id/sRight"
+                    android:lineSpacingExtra="@dimen/margin_padding_0_7x"
+                    android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                    android:text="@string/survey_title_buy"
+                    android:textColor="@color/colorTitleSurvey"
+                    android:textSize="@dimen/text_size_22" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_1_5x">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_1_5x"
+                    android:lineSpacingExtra="@dimen/margin_padding_0_7x"
+                    android:text="@string/survey_title_first_show_message"
+                    android:textColor="@color/colorGray" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.tvo.htc.view.component.CpnButton
+        android:id="@+id/cpnbStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:btn_icon_right="@drawable/ic_arrow_right_white"
+        app:isCenterIcon="true"
+        app:text="@string/survey_btn_next"
+        app:type="BLUE2" />
+</RelativeLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.tvo.htc.view.component.CpnNavigationBar
+            android:id="@+id/navigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:btSearchVisibility="VISIBLE"
+            app:navigation_type="BACK"
+            app:title="@string/map_title" />
+
+        <fragment
+            android:id="@+id/fragmentMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/navigationBar" />
+
+        <!--<ImageButton
+            android:id="@+id/btnGps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gps"
+            android:layout_alignBottom="@id/fragmentMap"
+            android:layout_alignRight="@id/fragmentMap"
+            android:background="@color/colorTransparent"
+            tools:ignore="ContentDescription" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navigationBar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_padding_1x"
+            android:background="@drawable/ic_background_find_location"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/btnWorkShop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="-5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_choose_find_location"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_0_5x"
+                android:paddingRight="@dimen/margin_padding_0_5x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:text="@string/map_title_work_shop"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/btnShowRoom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_0_5x"
+                android:paddingRight="@dimen/margin_padding_0_5x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:text="@string/map_title_show_room"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialogSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/navigationBar"
+            android:background="@color/colorBlurSearch"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_padding_1x"
+                    android:text="@string/search_filter"
+                    android:textSize="@dimen/text_size_17"
+                    android:textStyle="bold" />
+
+                <com.tvo.htc.view.component.CpnSpinner
+                    android:id="@+id/spinCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:layout_margin="@dimen/margin_padding_1x"
+                    android:hint="@string/search_input_city"
+                    app:sp_background="@drawable/bg_edit_text_search"
+                    app:sp_paddingLeft="@dimen/margin_padding_1x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/search_or"
+                    android:textSize="@dimen/text_size_15" />
+
+                <EditText
+                    android:id="@+id/edtAgency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_padding_1x"
+                    android:background="@drawable/bg_edit_text_search"
+                    android:hint="@string/search_input_agency"
+                    android:padding="10dp" />
+
+                <com.tvo.htc.view.component.CpnButton
+                    android:id="@+id/btnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_padding_1x"
+                    app:text="@string/search_button_title" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutListAgency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnShowList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_list_line_nav" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpListAgency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/layoutButton"
+                android:background="@color/colorWhite"
+                android:clipToPadding="false"
+                android:paddingLeft="@dimen/margin_padding_2_5x"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="@dimen/margin_padding_2_5x"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhiteBlur" />
+
+            <ImageView
+                android:id="@+id/btnBackList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left_arrow"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="@dimen/margin_padding_2_5x"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorWhiteBlur" />
+
+            <LinearLayout
+                android:id="@+id/layoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/margin_padding_2x"
+                android:layout_marginRight="@dimen/margin_padding_2x"
+                android:layout_marginBottom="@dimen/margin_padding_1_5x"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <com.tvo.htc.view.component.CpnButton
+                    android:id="@+id/btnDirection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_0_5x"
+                    android:layout_marginEnd="@dimen/margin_padding_0_5x"
+                    android:layout_marginRight="@dimen/margin_padding_0_5x"
+                    android:layout_weight="1"
+                    app:btn_icon_left="@drawable/ic_find_direction"
+                    app:isCenterIcon="true"
+                    app:text="@string/map_title_button_direction" />
+
+                <com.tvo.htc.view.component.CpnButton
+                    android:id="@+id/btnGoogleMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_0_5x"
+                    android:layout_marginLeft="@dimen/margin_padding_0_5x"
+                    android:layout_marginTop="@dimen/margin_padding_0_5x"
+                    android:layout_weight="1"
+                    app:btn_icon_left="@drawable/ic_google_maps"
+                    app:isCenterIcon="true"
+                    app:text="@string/map_title_button_google_map" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvListAgency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:visibility="visible"
+                tools:listitem="@layout/item_find_location" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

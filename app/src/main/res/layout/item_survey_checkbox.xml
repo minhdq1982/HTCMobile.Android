@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/margin_padding_1x">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/chk"
+            android:button="@drawable/bg_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SurveyText"
+            tools:text="Tap chi"
+            android:textSize="@dimen/text_size_survey"
+            android:layout_marginLeft="@dimen/margin_padding_0_6x" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

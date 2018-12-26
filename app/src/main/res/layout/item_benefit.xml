@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_padding_1_2x"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlShowExpand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_padding_1_5x">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/sRight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCarName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hyundai_sans_vn_head_office_medium"
+                android:textColor="@color/colorTextTile"
+                android:textSize="@dimen/text_size_17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLicensePlate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_0_5x"
+                android:fontFamily="@font/hyundai_sans_vn_head_office_regular"
+                android:textColor="@color/colorTextTile"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/tvAgencyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hyundai_sans_vn_head_office_regular"
+                android:textColor="@color/colorTextTile"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <com.tvo.htc.view.component.CpnMembershipCard
+                android:id="@+id/cpnMembershipCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:scale_height="@dimen/benefit_card_height"
+                app:scale_width="@dimen/benefit_card_width"
+                app:visible_use_card="GONE" />
+
+            <ImageView
+                android:id="@+id/imStateExpand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_1_5x"
+                android:padding="@dimen/margin_padding_1x"
+                android:src="@drawable/ic_drop_down" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerInnerBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingLeft="@dimen/margin_padding_1_5x"
+            android:paddingRight="@dimen/margin_padding_1_5x"
+            tools:listitem="@layout/item_inner_benefit" />
+    </LinearLayout>
+</LinearLayout>

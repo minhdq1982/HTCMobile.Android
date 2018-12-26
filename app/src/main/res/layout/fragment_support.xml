@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:btNotificationVisibility="VISIBLE"
+        app:navigation_type="NONE"
+        app:title="@string/support_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundSupport">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_padding_1x"
+                android:layout_marginRight="@dimen/margin_padding_1x"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_padding_1_5x"
+                    android:paddingTop="@dimen/margin_padding_2x"
+                    android:paddingRight="@dimen/margin_padding_1_5x"
+                    android:paddingBottom="@dimen/margin_padding_1_5x">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_bg_support" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_padding_3x"
+                        android:src="@drawable/ic_support_logo" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnFindLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/support_item_height"
+                    android:background="@drawable/bg_support_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_padding_1_5x"
+                    android:paddingRight="@dimen/margin_padding_1_5x"
+                    android:paddingBottom="@dimen/margin_padding_0_3x">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_find_location" />
+
+                    <TextView
+                        style="@style/SupportButtonText"
+                        android:text="@string/support_find_location" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_support" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnBookGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/support_item_height"
+                    android:layout_marginTop="@dimen/margin_padding_0_3x"
+                    android:background="@drawable/bg_support_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_padding_1_5x"
+                    android:paddingRight="@dimen/margin_padding_1_5x"
+                    android:paddingBottom="@dimen/margin_padding_0_3x">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_book_guide" />
+
+                    <TextView
+                        style="@style/SupportButtonText"
+                        android:text="@string/support_book_guide" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_support" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnSentSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/support_item_height"
+                    android:layout_marginTop="@dimen/margin_padding_0_3x"
+                    android:background="@drawable/bg_support_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_padding_1_5x"
+                    android:paddingRight="@dimen/margin_padding_1_5x"
+                    android:paddingBottom="@dimen/margin_padding_0_3x">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sent_support" />
+
+                    <TextView
+                        style="@style/SupportButtonText"
+                        android:text="@string/support_sent_support" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_support" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/btnCallHotline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/margin_padding_1x"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_support_call" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

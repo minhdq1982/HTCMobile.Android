@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "880695654071",
+    "firebase_url": "https://htc-mobile-app-223402.firebaseio.com",
+    "project_id": "htc-mobile-app-223402",
+    "storage_bucket": "htc-mobile-app-223402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880695654071:android:bf59fe0a38f21282",
+        "android_client_info": {
+          "package_name": "com.tvo.HTCMobileApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880695654071-cpisglpv37j5m5t19iv0nhvij0a2vjni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tvo.HTCMobileApp",
+            "certificate_hash": "bf1abaf54fd197988593f51fabf986ff378cec0f"
+          }
+        },
+        {
+          "client_id": "880695654071-a1ds6brml4rt5g5c5ti5tq8iltf0t34u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsRclrROvp20tcjANjPqPdnxDRGxmXISg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880695654071-a1ds6brml4rt5g5c5ti5tq8iltf0t34u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "880695654071-0h622c70hn4iibr4b2h30j7ocmi1u60u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tvo.HTCMobileApp.Internal"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

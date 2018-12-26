@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/cpnbDone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBackgroundHeaderAppoitment"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding_1_5x">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1x"
+                        android:src="@drawable/ic_done_preview_make_appointment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1x"
+                        android:text="@string/make_appointment_preview_title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1x"
+                        android:gravity="center"
+                        android:text="@string/make_appointment_preview_title_2"
+                        android:textColor="@color/colorSurveySubText80" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding_1x">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/make_appointment_preview_tips" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_2x"
+                        android:background="@drawable/bg_edit_text"
+                        android:paddingBottom="@dimen/margin_padding_1x"
+                        android:text="@string/make_appointment_preview_customer_title"
+                        android:textSize="@dimen/text_size_17"
+                        android:textStyle="bold" />
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_customer_full_name" />
+
+                        <TextView
+                            android:id="@+id/tvCustomerFullName"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="Full name" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_customer_phone" />
+
+                        <TextView
+                            android:id="@+id/tvCustomerPhone"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="00000000000" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_customer_email" />
+
+                        <TextView
+                            android:id="@+id/tvCustomerEmail"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="Ex@mail.com" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_2x"
+                        android:background="@drawable/bg_edit_text"
+                        android:paddingBottom="@dimen/margin_padding_1x"
+                        android:text="@string/make_appointment_preview_services_title"
+                        android:textSize="@dimen/text_size_17"
+                        android:textStyle="bold" />
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_service" />
+
+                        <TextView
+                            android:id="@+id/tvServices"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="Bảo dưỡng, Bảo hành" />
+                    </LinearLayout>
+
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_car_category" />
+
+                        <TextView
+                            android:id="@+id/tvCarCategory"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="Grand i10 2017" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_car_vervision" />
+
+                        <TextView
+                            android:id="@+id/tvCarVersion"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="Grand i10 2017" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_car_license_plate" />
+
+                        <TextView
+                            android:id="@+id/tvCarLicensePlate"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="30E-777.79" />
+                    </LinearLayout>
+
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_date" />
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="20/09/2018 lúc 10:00" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_agency" />
+
+                        <TextView
+                            android:id="@+id/tvAgency"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="Huyndai Giải Phóng" />
+                    </LinearLayout>
+
+
+                    <LinearLayout style="@style/AppointmentStyle">
+
+                        <TextView
+                            style="@style/AppointmentStyle.TextView"
+                            android:text="@string/make_appointment_preview_service_staff" />
+
+                        <TextView
+                            android:id="@+id/tvServiceStaff"
+                            style="@style/AppointmentStyle.TextViewValue"
+                            tools:text="Nguyễn Trần Lê" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_preview_tips_bottom"
+                       />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.tvo.htc.view.component.CpnButton
+            android:id="@+id/cpnbDone"
+            android:layout_width="@dimen/width_cpn_button_service_make_appointment"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin_padding_1_5x"
+            app:text="@string/service_make_appointment_done" />
+    </RelativeLayout>
+</LinearLayout>

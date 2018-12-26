@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Survey question 1-->
+    <string name="question_0_0_question">Vui lòng xác nhận tên xe Hyundai mà Quý khách đang sử dụng:</string>
+
+    <string name="question_0_1_question">Lần bảo dưỡng/sửa chữa gần đây nhất của Quý khách tại Đại lý Hyundai là khi nào?</string>
+
+    <string name="question_0_2_question">Tên của Đại lý đó?</string>
+
+    <string name="question_0_3_question">Đại lý ở Tỉnh/Thành phố nào?</string>
+
+    <string name="question_0_4_question">Loại công việc đã thực hiện</string>
+    <string-array name="question_0_4_answer">
+        <item>Bảo dưỡng định kỳ</item>
+        <item>Sửa chữa</item>
+        <item>Bảo hành</item>
+    </string-array>
+
+    <!--Survey question 2-->
+    <string name="question_1_0_question">A1. Quý khách đánh giá như thế nào về mức độ hài lòng chung đối với Đại lý?</string>
+    <string name="question_1_1_question">B1. Quý khách đánh giá về cơ sở vật chất của Đại lý (Hình ảnh, mức độ sạch sẽ …)</string>
+    <string name="question_1_2_question">B2. Dễ dàng lái xe ra/ vào Xưởng dịch vụ:</string>
+    <string name="question_1_3_question">B3. Khu vực đỗ xe thuận tiện:</string>
+    <string name="question_1_4_question">B4. Mức độ sạch sẽ của Đại lý:</string>
+    <string name="question_1_5_question">B5. Sự tiện nghi của phòng chờ khách hàng:</string>
+    <!--Survey question 3-->
+    <string name="question_2_0_question">C1. Quý khách đánh giá như thế nào về Nhân viên dịch vụ?</string>
+    <string name="question_2_1_question">C2. Xử lý các yêu cầu qua điện thoại (nếu có):</string>
+    <string name="question_2_2_question">C3. Mức độ lịch sự và trung thực:</string>
+    <string name="question_2_3_question">C4. Đáp ứng nhanh chóng các yêu cầu của Quý khách:</string>
+    <string name="question_2_4_question">C5. Lắng nghe và hiểu rõ các yêu cầu của Quý khách:</string>
+    <string name="question_2_5_question">C6. Giải thích rõ ràng &amp; đầy đủ câu hỏi của Quý khách:</string>
+
+    <!--Survey question 4-->
+    <string name="question_3_0_question">D1. Quý khách đánh giá thế nào về mức độ giải quyết nhanh chóng các yêu cầu của Quý khách?</string>
+    <string name="question_3_1_question">D2. Dễ dàng đặt lịch hẹn (nếu có):</string>
+    <string name="question_3_2_question">D3. Sắp xếp lịch hẹn thuận tiện với yêu cầu của Quý khách (nếu có):</string>
+    <string name="question_3_3_question">D4. Tiếp nhận xe nhanh chóng:</string>
+    <string name="question_3_4_question">D5. Giao xe nhanh chóng:</string>
+    <string name="question_3_5_question">D6. Tổng thời gian cần thiết để hoàn thành chiếc xe của Quý khách:</string>
+
+    <!--Survey question 5-->
+    <string name="question_4_0_question">E1. Quý khách đánh giá như thế nào về chất lượng của các công việc được thực hiện?</string>
+    <string name="question_4_1_question">E2. Giải thích các công việc sẽ thực hiện:</string>
+    <string name="question_4_2_question">E3. Mức độ hoàn thành việc BD/SC:</string>
+    <string name="question_4_3_question">E4. Sự sạch sẽ của chiếc xe sau khi BD/SC:</string>
+    <string name="question_4_4_question">E5. Giải thích lại các hạng mục công việc đã thực hiện:</string>
+
+    <!--Survey question 6-->
+    <string name="question_5_0_question">F1. Quý khách đánh giá như thế nào về chi phí dịch vụ?</string>
+    <string name="question_5_1_question">F2. Giải thích về các chi phí liên quan trước khi BD/SC:</string>
+    <string name="question_5_2_question">F3. Tính hợp lý của các chi phí:</string>
+    <string name="question_5_3_question">F4. Sự hợp lý về giá cả của các phụ tùng:</string>
+    <string name="question_5_4_question">F5. Giải thích lại các chi phí dịch vụ khi giao xe:</string>
+
+    <string-array name="survey_list_levels">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!--Survey question 7-->
+
+    <string name="question_6_0_question">G1. Khi đến Đại lý, Quý khách mất bao lâu để được đón tiếp?</string>
+    <string-array name="question_6_0_answer">
+        <item>Ngay lập tức</item>
+        <item>1-2 phút</item>
+        <item>2-5 phút</item>
+        <item>Hơn 5 phút</item>
+    </string-array>
+    <string name="question_6_1_question">H1. Nếu có công việc phát sinh, Quý khách có được thông báo trước?</string>
+    <string-array name="question_6_1_answer">
+        <item>Có</item>
+        <item>Không</item>
+        <item>Không có công việc nào phát sinh</item>
+    </string-array>
+
+    <string name="question_6_2_question">I1. Quý khách có nhận được xe đúng theo thời gian cam kết ban đầu không?</string>
+    <string name="question_6_2_desc">Nếu Quý khách chọn “Có” hoặc “Đại lý không cam kết thời gian hoàn thành”, vui lòng chuyển tới câu J1. Nếu Quý khách chọn “Không”, vui lòng tiếp tục với câu I2.</string>
+    <string-array name="question_6_2_answer">
+        <item>Có</item>
+        <item>Không</item>
+        <item>Đại lý không cam kết thời gian hoàn thành</item>
+    </string-array>
+
+    <string name="question_6_3_question">I2. Quý khách có nhận được thông báo trước về việc chậm trễ?</string>
+    <string-array name="question_6_3_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+    <!--Survey question 8-->
+    <string name="question_7_0_question">J1. Xe của Quý khách có phải quay lại Đại lý để kiểm tra và sửa chữa lại không?</string>
+    <string name="question_7_0_desc">Nếu Quý khách chọn “Không”, vui lòng chuyển tới câu K1. Nếu Quý khách chọn “Có,” vui lòng tiếp tục với câu J2.</string>
+    <string-array name="question_7_0_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+    <string name="question_7_1_question">J2. Lý do Quý khách mang xe trở lại đại lý? (Chọn câu trả lời dưới đây)</string>
+    <string-array name="question_7_1_answer">
+        <item>Không đủ thời gian để sửa/Lịch sửa chữa quá đầy</item>
+        <item>Phụ tùng không có sẵn</item>
+        <item>Phụ tùng có nhưng bị lỗi</item>
+        <item>Xưởng dịch vụ không tìm ra nguyên nhân trong lần sửa chữa trước</item>
+        <item>Xưởng dịch vụ cố gắng sửa chữa nhưng không khác phục được sự cố</item>
+        <item>Lỗi gặp lại sau khi sửa chữa ở lần trước</item>
+        <item>Sửa đúng trong lần trước nhưng có 1 vần đề liên quan phát sinh thêm</item>
+    </string-array>
+
+    <!--Survey question 9-->
+    <string name="question_8_0_question">K1. Sau khi BD/SC, Quý khách có được liên hệ và hỏi thăm không?</string>
+    <string-array name="question_8_0_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+    <string name="question_8_1_question">L1. Quý khách có dự định giới thiệu Đại lý với bạn bè và người thân?</string>
+    <string-array name="question_8_1_answer">
+        <item>Chắc chắn không</item>
+        <item>Có thể không</item>
+        <item>Có thể có</item>
+        <item>Chắc chắn có</item>
+    </string-array>
+
+    <string name="question_8_2_question">M1. Quý khách có dự định trở lại Đại lý để làm BD/SC cho các lần sau?</string>
+    <string-array name="question_8_2_answer">
+        <item>Chắc chắn không</item>
+        <item>Có thể không</item>
+        <item>Có thể có</item>
+        <item>Chắc chắn có</item>
+    </string-array>
+
+    <string name="question_8_3_question">Vui lòng chia sẻ thêm ý kiến cho lần Bảo dưỡng/ sửa chữa gần đây nhất của Quý khách tại đại lý (nếu có):</string>
+
+    <string name="question_8_4_question">Tôi cho phép chia sẻ những câu trả lời của tôi với Đại lý nơi tôi làm dịch vụ:</string>
+    <string-array name="question_8_4_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+    <!--Survey question 10-->
+    <string name="question_9_0_question">Vui lòng cho biết Họ tên của Quý khách</string>
+    <string name="question_9_0_desc">(Thông tin được dùng để gửi Quà tri ân sau khi Quý khách gửi bảng trả lời)</string>
+    <string name="question_9_1_question">Địa chỉ hiện tại của Quý khách</string>
+    <string name="question_9_1_desc">(Thông tin được dùng để gửi Quà tri ân sau khi Quý khách gửi bảng trả lời)</string>
+    <string name="question_9_2_question">Địa chỉ Email của Quý Khách</string>
+    <string name="question_9_2_desc">(Vui lòng nhập chính xác địa chỉ email đã cung cấp cho BP. CSKH trước đó)</string>
+    <string name="question_9_3_question">Số điện thoại di động/cố định của Quý khác</string>
+    <string name="question_9_4_question">Biển kiểm soát của chiếc xe làm dịch vụ</string>
+    <string name="question_9_4_desc">(Vui lòng nhập biến kiểm soát của chiếc xe Quý khách mang vào làm dịch vụ)</string>
+</resources>

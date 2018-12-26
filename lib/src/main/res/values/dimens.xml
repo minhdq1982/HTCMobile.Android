@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NewDefault screen margins, per the Android Design guidelines. -->
+    <dimen name="margin_padding_default_1_7x">17dp</dimen>
+    <dimen name="margin_padding_default_2x">20dp</dimen>
+    <dimen name="margin_padding_default_2_5x">25dp</dimen>
+    <dimen name="margin_padding_default_3x">30dp</dimen>
+    <dimen name="dlg_action_height">44dp</dimen>
+    <dimen name="dlg_action_width">108dp</dimen>
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="dlg_radius">0dp</dimen>
+
+    <dimen name="text_size_default">16sp</dimen>
+    <dimen name="text_size_default_13sp">13sp</dimen>
+    <dimen name="text_size_default_14sp">14sp</dimen>
+    <dimen name="text_size_default_17sp">17sp</dimen>
+
+</resources>

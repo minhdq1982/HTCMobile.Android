@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigation_type="BACK"
+        app:title="@string/price_advice" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_padding_1x">
+
+            <com.tvo.htc.view.component.CpnSpinner
+                android:id="@+id/spListCar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="@dimen/margin_padding_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:layout_marginRight="@dimen/margin_padding_1x"
+                android:textStyle="bold"
+                app:sp_background="@drawable/bg_edit_text_search"
+                app:sp_paddingLeft="@dimen/margin_padding_1x" />
+
+            <com.tvo.htc.view.component.CpnSpinner
+                android:id="@+id/spYear"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="@dimen/margin_padding_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:layout_marginRight="@dimen/margin_padding_1x"
+                app:sp_background="@drawable/bg_edit_text_search"
+                app:sp_paddingLeft="@dimen/margin_padding_1x" />
+
+            <com.tvo.htc.view.component.CpnSpinner
+                android:id="@+id/spArena"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="@dimen/margin_padding_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:layout_marginRight="@dimen/margin_padding_1x"
+                app:sp_background="@drawable/bg_edit_text_search"
+                app:sp_paddingLeft="@dimen/margin_padding_1x" />
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnCostPrediction"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_width_40"
+                android:layout_marginLeft="@dimen/margin_padding_1x"
+                android:layout_marginTop="@dimen/margin_padding_1x"
+                android:layout_marginRight="@dimen/margin_padding_1x"
+                android:background="@drawable/bg_button_press"
+                app:text="@string/price_advice_cost_prediction" />
+
+            <LinearLayout
+                android:id="@+id/llContentCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_car_bg"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/imgCarProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/logo_term_size"
+                        android:layout_centerInParent="true"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_padding_0_1x"
+                    android:background="@color/colorMaintenanceBackground" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPriceAdvice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_price_advice" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_padding_1x">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_vat_note" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_padding_1x"
+                        android:layout_marginLeft="@dimen/margin_padding_1x"
+                        android:lineSpacingExtra="@dimen/margin_padding_0_5x"
+                        android:text="@string/price_advice_vat_note"
+                        android:textColor="@color/colorTextTitleEdt" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                android:gravity="center"
+                android:text="@string/survey_default_error" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

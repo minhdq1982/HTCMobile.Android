@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundCrop"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.isseiaoki.simplecropview.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sBottom"
+            custom:scv_background_color="@color/colorBackgroundCrop"
+            custom:scv_crop_mode="square"
+            custom:scv_frame_color="@color/white"
+            custom:scv_frame_stroke_weight="1dp"
+            custom:scv_guide_show_mode="show_always"
+            custom:scv_guide_stroke_weight="1dp"
+            custom:scv_handle_show_mode="show_always"
+            custom:scv_handle_size="@dimen/margin_padding_1x"
+            custom:scv_overlay_color="@color/colorOverlay"
+            custom:scv_touch_padding="8dp" />
+
+        <LinearLayout
+            android:id="@+id/sBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                app:text="@string/crop_btn_cancel"
+                app:type="WHITE" />
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbCrop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                app:text="@string/crop_btn"
+                app:type="BLUE2" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

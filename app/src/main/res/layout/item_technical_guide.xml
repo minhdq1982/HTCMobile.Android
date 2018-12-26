@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_padding_1_5x"
+    android:paddingRight="@dimen/margin_padding_1_5x"
+    android:paddingBottom="@dimen/margin_padding_1x">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextSub"
+        android:textSize="@dimen/text_size_15"
+        tools:text="10-10-10: 020012" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_0_5x"
+        android:maxLines="2"
+        android:textColor="@color/colorTextTile"
+        android:textSize="@dimen/text_size_20"
+        android:textStyle="bold"
+        tools:text="AbC of title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_default_1_7x"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imPreview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/news_item_height"
+                android:background="@color/colorDefaultImage"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_1x"
+            android:layout_weight="1"
+            android:maxLines="4"
+            tools:text="Các võ hiệp đi ngủ gần hết rồi mới dám mang ra khoe /chemat
+Súng của Poharan bé tự làm ạ ~~
+Vì ko biết quay nên máy rung vl hự hự" />
+    </LinearLayout>
+
+</LinearLayout>

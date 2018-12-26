@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_padding_1_5x">
+
+    <TextView
+        android:id="@+id/tvHistoryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/imNav"
+        android:layout_width="@dimen/support_book_guide_detail_icon"
+        android:layout_height="@dimen/support_book_guide_detail_icon"
+        android:layout_marginLeft="@dimen/margin_padding_1_5x"
+        android:padding="@dimen/margin_padding_0_2x"
+        android:src="@drawable/ic_arrow_right_c" />
+</LinearLayout>

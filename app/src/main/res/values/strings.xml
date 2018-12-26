@@ -1,0 +1,745 @@
+<resources>
+    <string name="app_name">HTC Mobile</string>
+
+    <!--Common-->
+    <string name="load_more_data">Tải thêm dữ liệu</string>
+    <string name="dlg_ok">Đồng ý</string>
+    <string name="dlg_cancel">Hủy</string>
+    <string name="mesage_turn_on_gps">Bạn có muốn bật GPS?</string>
+    <string name="default_notification_channel_id">default_channel_id</string>
+
+    <!-- Screen splash -->
+    <string name="loading">Đang tải. Vui lòng chờ…</string>
+
+    <!-- Screen login -->
+    <string name="login_title">Đăng nhập</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="login">Đăng nhập</string>
+    <string name="login_error_input_phone">Vui lòng điền số điện thoại trước khi đăng nhập.</string>
+    <string name="login_resent_code">Đã gửi lại mã OTP.</string>
+
+    <string name="login_tips">Sau khi đăng nhập, bạn sẽ có thể sử dụng những công cụ hỗ trợ dành cho thành viên Hyundai.</string>
+    <string name="login_ver">Phiên bản 1.0.1</string>
+
+    <!-- Screen Term -->
+    <string name="term_title">Thỏa thuận người dùng</string>
+    <string name="term_accpect">Đồng ý</string>
+
+    <!--Screen Add Car-->
+    <string name="add_car_car_name">Tên xe:</string>
+    <string name="add_car_agency">Đại lý mua:</string>
+    <string name="add_car_number_vin">Số VIN</string>
+    <string name="add_car_license_plate">Biển số xe (*)</string>
+    <string name="add_car_tip_license_plate">Biển số viết liền không dùng dấu . và dấu cách</string>
+    <string name="add_car_hint_date_purchase">dd/mm/yyyy</string>
+    <string name="add_car_date_purchase">Ngày mua:</string>
+    <string name="add_car_error_add_empty">Quý khách vui lòng điền đầy đủ các thông tin.</string>
+    <string name="add_car_error_vin_number">Số VIN không hợp lệ.</string>
+    <string name="add_car_error_licensePlate">Biển số xe không hợp lệ.</string>
+    <string name="add_car_error_invalid_date">Ngày mua không hợp lệ.</string>
+    <string name="add_car_success_add">Thêm xe thành công!</string>
+    <string name="add_car_success_edit">Sửa thông tin xe thành công!</string>
+    <string name="add_car_title">Thêm xe</string>
+    <string name="add_car_confirm_yes">Đồng ý</string>
+    <string name="add_car_confirm_no">Từ chối</string>
+    <string name="add_car_confirm_message">Bạn muốn xóa xe?</string>
+    <string name="add_car_btn_save">Lưu</string>
+    <string name="add_car_btn_add">Thêm xe</string>
+    <string name="profile_info_hint_name">Tên khách hàng</string>
+
+
+    <string name="add_car_edit_title">Sửa thông tin xe</string>
+    <string name="add_car_add_title">Thêm xe</string>
+    <string name="add_car_tip">Quý khách vui lòng điền đầy đủ các thông tin có dấu (*)</string>
+
+    <!-- Screen Profile -->
+    <string name="profile_title">Thông tin cá nhân</string>
+    <string-array name="profile_arr_tab_title">
+        <item>Thông tin\ncá nhân</item>
+        <item>Thông tin\nxe</item>
+        <item>Thẻ\nhội viên</item>
+    </string-array>
+    <string name="profile_confirm_save_need_change_tab">Bạn có muốn lưu lại thay đổi không?</string>
+    <string name="profile_confirm_exit">Bạn có muốn lưu thay đổi và trở lại màn hình trước không?</string>
+    <string name="profile_title_change_avatar">Chọn ảnh đại diện</string>
+    <string name="profile_change_avatar_pick_gallery">Thư viện ảnh</string>
+    <string name="profile_change_avatar_pick_camera">Máy ảnh</string>
+
+    <string name="profile_error_get_profile">Quý khách chưa đăng nhập. Vui lòng đăng nhập và thử lại.</string>
+
+
+    <!--Screen profile Info-->
+    <string name="profile_info_hint_phone">Số điện thoại</string>
+    <string name="profile_info_hint_brithday">Ngày sinh</string>
+    <string name="profile_info_hint_identify_id">CMND/căn cước/hộ chiếu</string>
+    <string name="profile_info_hint_email">Email</string>
+    <string name="profile_info_hint_adress">Địa chỉ</string>
+    <string name="profile_info_logout">Đăng xuất</string>
+    <string name="profile_info_edit">Sửa thông tin cá nhân</string>
+
+    <!--Menu-->
+    <string name="menu_logout">Đăng xuất</string>
+    <string name="menu_personal_information">Thông tin cá nhân</string>
+    <string name="menu_maintenance_schedule">Nhắc lịch bảo dưỡng</string>
+    <string name="menu_setting">Cài đặt</string>
+    <string name="menu_login">Đăng nhập</string>
+
+    <!--Screen service make appointment-->
+    <string name="make_appointment_error_date_empty">Ngày hẹn không được để trống</string>
+    <string name="make_appointment_error_empty_licenseplates">Biển số xe không được để trống</string>
+    <string name="make_appointment_error_empty_services">Bạn chưa chọn dịch vu nào.</string>
+    <string name="make_appointment_info_choose_profile">Lấy từ thông tin xe</string>
+    <string name="make_appointment_info_choose_new">Chọn xe mới</string>
+    <string name="make_appointment_add_car">Thêm vào thông tin xe</string>
+    <string name="make_appointment_update_profile">Thêm vào thông tin cá nhân</string>
+    <string name="service_make_appointment_title">Đặt lịch hẹn</string>
+    <string name="service_make_appointment_previous">Quay lại</string>
+    <string name="service_make_appointment_next">Tiếp theo</string>
+    <string name="service_make_appointment_sussess">Hoàn thành</string>
+    <string name="service_make_appointment_done">Về trang chủ</string>
+    <string name="make_appointment_error_empty">Vui lòng nhập đủ các trường có dấu (*)</string>
+    <string name="make_appointment_error_date_format">Ngày hẹn không hợp lệ.</string>
+    <string name="make_appointment_error_time_format">Giờ hẹn không hợp lệ.</string>
+    <string name="make_appointment_error_name">Họ tên không hợp lệ.</string>
+    <string name="make_appointment_error_email">Địa chỉ email không hợp lệ.</string>
+    <string name="make_appointment_error_phone">Số điện thoại không hợp lệ.</string>
+    <string name="make_appointment_error_license_plates">Biển số xe không hợp lệ.</string>
+    <!--Screen service make appoint service list-->
+    <string-array name="make_appointment_service_list_item">
+        <item>Bảo hành</item>
+        <item>Bảo dưỡng</item>
+        <item>Sửa chữa chung</item>
+        <item>Sửa thân xe và sơn</item>
+        <item>Kiểm tra và triệu hồi</item>
+    </string-array>
+    <string name="make_appointment_service_list_title">Chọn dịch vụ</string>
+
+    <!--Screen service make appoint info-->
+    <string name="make_appointment_info_title">Thông tin lịch hẹn</string>
+    <string name="make_appointment_info_tips">Quý khách vui lòng đặt hẹn trước 4 tiếng làm việc để được phục vụ tốt hơn.</string>
+    <string name="make_appointment_info_date">Ngày dự kiến (*)</string>
+    <string name="make_appointment_info_time">Thời gian dự kiến (*)</string>
+    <string name="make_appointment_info_city">Thành Phố (*)</string>
+    <string name="make_appointment_info_agency">Đại lý (*)</string>
+    <string name="make_appointment_info_service_staff">Nhân viên phục vụ</string>
+    <string name="make_appointment_info_tips_2">Quý khách vui lòng điền đầy đủ các thông tin có dấu (*)</string>
+    <string name="make_appointment_info_hint_date">dd/mm/yyyy</string>
+    <string name="make_appointment_info_hint_service_staff" />
+
+
+    <string-array name="make_appointment_info_arr_time">
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+    </string-array>
+
+    <!--Screen service make appoint info customer-->
+    <string name="make_appointment_info_customer_title">Thông tin khách hàng</string>
+    <string name="make_appointment_info_customer_title_2">Thông tin cá nhân</string>
+
+    <string name="make_appointment_info_customer_full_name">Họ tên (*)</string>
+    <string name="make_appointment_info_customer_email">Email (*)</string>
+    <string name="make_appointment_info_customer_phone">Số điện thoại (*)</string>
+    <string name="make_appointment_info_customer_note">Yêu cầu sửa chữa</string>
+    <string name="make_appointment_info_customer_car_title">Thông tin xe</string>
+    <string name="make_appointment_info_customer_car_category">Mẫu xe</string>
+    <string name="make_appointment_info_customer_car_versions">Phiên bản</string>
+    <string name="make_appointment_info_customer_car_license_plate">Biển số (*)</string>
+
+    <string name="make_appointment_info_customer_full_name_hint">Nhập họ tên</string>
+    <string name="make_appointment_info_customer_email_hint">Nhập email</string>
+    <string name="make_appointment_info_customer_phone_hint">Nhập số điện thoại</string>
+    <string name="make_appointment_info_customer_title_hint">Nhập tiêu đề</string>
+    <string name="make_appointment_info_customer_message_hint">Nhập nội dung</string>
+    <string name="make_appointment_info_customer_license_plate">Nhập biển số xe</string>
+    <string name="make_appointment_info_customer_note_hint">Nhập dữ liệu</string>
+    <string name="make_appointment_info_customer_license_place_hint">Nhập biển số xe</string>
+
+
+    <string-array name="make_appoint_arr_honorific">
+        <item>Ông</item>
+        <item>Bà</item>
+        <item>Anh</item>
+        <item>Chị</item>
+    </string-array>
+
+
+    <!--Screen service make appoint preview-->
+    <string name="make_appointment_preview_title">Hoàn tất đăng ký</string>
+    <string name="make_appointment_preview_title_2">Xin cảm ơn quý khách đã tin tưởng sử\ndụng dịch vụ của chúng tôi.</string>
+    <string name="make_appointment_preview_tips">Chúng tôi xin xác nhận thông tin đăng ký của quý khách như sau:</string>
+    <string name="make_appointment_preview_customer_title">Thông tin khách hàng:</string>
+    <string name="make_appointment_preview_customer_full_name">Tên khách hàng:</string>
+    <string name="make_appointment_preview_customer_phone">Số điện thoại:</string>
+    <string name="make_appointment_preview_customer_email">Email:</string>
+    <string name="make_appointment_preview_services_title">Thông tin dịch vụ:</string>
+    <string name="make_appointment_preview_service">Dịch vụ:</string>
+    <string name="make_appointment_preview_service_staff">Nhân viên dịch vụ:</string>
+    <string name="make_appointment_preview_car_category">Mẫu xe:</string>
+    <string name="make_appointment_preview_car_vervision">Phiên bản xe:</string>
+    <string name="make_appointment_preview_car_license_plate">Biển số xe:</string>
+    <string name="make_appointment_preview_date">Thời gian:</string>
+    <string name="make_appointment_preview_agency">Đại lý:</string>
+    <string name="make_appointment_preview_tips_bottom">Nhân viên tư vấn dịch vụ sẽ liên hệ với Quý khách để xác nhận lịch hẹn trong thời gian sớm nhất.\n\nXin trân trọng cảm ơn!</string>
+
+
+    <!--Screen dialog confirm exit make appoint-->
+    <string name="dialog_confirm_exit_make_appoint_text">Thông tin đặt lịch hẹn dịch vụ sẽ không được lưu lai. Bạn có muốn tiếp tục?</string>
+    <string name="dialog_confirm_exit_make_appoint_confirm">Đồng ý</string>
+    <string name="dialog_confirm_exit_make_appoint_cancel">Hủy</string>
+
+    <!--Screen services-->
+    <string name="services_title">Dịch vụ</string>
+    <string name="services_option">Đặt lịch hẹn dịch vụ</string>
+    <string-array name="services_arr_tab_title">
+        <item>Lịch hẹn</item>
+        <item>Giá bảo dưỡng</item>
+    </string-array>
+
+    <!--Screeen news-->
+    <string-array name="news_arr_tab_title">
+        <item>Tin HTC</item>
+        <item>Tin thị trường</item>
+        <item>News feed</item>
+        <item>Hội nhóm Facebook</item>
+
+    </string-array>
+    <string-array name="news_arr_tab_title_no_news_feed">
+        <item>Tin HTC</item>
+        <item>Tin thị trường</item>
+    </string-array>
+    <string name="news_news_more">Xem thêm…</string>
+    <string name="news_news">Tin tức</string>
+    <string name="news_detail">Chi tiết</string>
+
+    <!--Screen maintenance level-->
+    <string name="maintenance_level_agency">Đại lý</string>
+    <string name="maintenance_level_car_category">Mẫu xe</string>
+    <string name="maintenance_level_list">Cấp bảo dưỡng</string>
+    <string name="maintenance_level_time_title">Thời gian bảo hành ước tính:</string>
+    <string name="maintenance_level_items">Dự toán giá các hạng mục bảo dưỡng:</string>
+    <string name="maintenance_level_vat">* Dự toán chưa bao gồm VAT và mang tính chất tạm tính để tham khảo</string>
+    <string name="maintenance_level_total">Tổng cộng</string>
+    <string name="maintenance_time">phút</string>
+    <string name="maintenance_empty">Không có dữ liệu</string>
+
+    <string name="maintenance_list_getlaborcost">Nhân công</string>
+    <string name="maintenance_list_getengineoil">Dầu động cơ</string>
+    <string name="maintenance_list_getboilflushwasher">Vòng đệm bulông xả nhớt</string>
+    <string name="maintenance_list_getengineoilfilter">Lọc dầu động cơ</string>
+    <string name="maintenance_list_getengineairfilter">Lọc gió động cơ</string>
+    <string name="maintenance_list_getfuelfilter">Lọc nhiên liệu</string>
+    <string name="maintenance_list_getacairfilter">Lọc gió điều hòa</string>
+    <string name="maintenance_list_getbugi">Bugi</string>
+    <string name="maintenance_list_getgearcaseoil">Dầu hộp số</string>
+    <string name="maintenance_list_getenginecoolant">Nước làm mát động cơ</string>
+    <string name="maintenance_list_getbrakefluid">Dầu phanh</string>
+    <string name="maintenance_list_getwindshieldwasherfluid">Nước rửa kính</string>
+
+    <!--Screen appointment detail-->
+    <string name="appointment_detail_title">Chi tiết lịch hẹn</string>
+    <string name="appointment_detail_customer_title">Thông tin khách hàng:</string>
+    <string name="appointment_detail_customer_full_name">Tên khách hàng:</string>
+    <string name="appointment_detail_customer_phone">Số điện thoại:</string>
+    <string name="appointment_detail_customer_email">Email:</string>
+    <string name="appointment_detail_info_title">Thông tin dịch vụ:</string>
+    <string name="appointment_detail_info_service">Dịch vụ:</string>
+    <string name="appointment_detail_car_category">Mẫu xe:</string>
+    <string name="appointment_detail_car_version">Phiên bản:</string>
+    <string name="appointment_detail_car_license_plate">Biển số:</string>
+    <string name="appointment_detail_car_year">Năm sản xuất:</string>
+    <string name="appointment_detail_time">Thời gian:</string>
+    <string name="appointment_detail_city">Thành phố:</string>
+    <string name="appointment_detail_agency">Đại lý:</string>
+    <string name="appointment_detail_service_staff">Nhân viên phục vụ:</string>
+    <string name="appointment_detail_note">Yêu cầu sửa chữa:</string>
+
+    <!--Screen buy car-->
+    <string name="buy_car">Mua xe</string>
+    <string name="buy_car_list_car">Danh sách sản phẩm</string>
+    <string name="buy_car_all">Tất cả</string>
+    <string name="buy_car_register">Đăng ký\nlái thử</string>
+    <string name="buy_car_select">Chọn xe\nHuyndai</string>
+    <string name="buy_car_advisory_price">Tư vấn\ngiá</string>
+    <string name="buy_car_advisory_money">Tư vấn\ntrả góp</string>
+    <string name="buy_car_hint_search">Bạn muốn tìm loại xe nào?</string>
+    <string name="error_car_version">Không có phiên bản nào để so sánh</string>
+
+
+    <!--Screen support-->
+    <string name="support_hot_line">Hotline: 1900 1234</string>
+    <string name="support_find_location">Tìm/ Liên hệ đại lý</string>
+    <string name="support_book_guide">Hướng dẫn</string>
+    <string name="support_sent_support">Góp ý/khiếu nại</string>
+    <string name="support_title">Hỗ trợ</string>
+    <string name="support_not_validate_phone_number">Số điện thoại không đúng!</string>
+
+    <!--Screen dialog confirm-->
+    <string name="dialog_confirm_txt_message">Bạn có chắc chắn muốn thực hiện?</string>
+    <string name="dialog_confirm_txt_button_ok">Đồng ý</string>
+    <string name="dialog_confirm_txt_button_cancel">Hủy</string>
+
+    <!--screen dialog sent support-->
+    <string name="dialog_sent_support_title">Chọn phương thức góp ý/khiếu nại.</string>
+    <string name="dialog_sent_support_call_hotline">Liên hệ tổng đài góp ý/khiểu nại.</string>
+    <string name="dialog_sent_support_sent_form">Gửi biểu mẫu</string>
+
+    <!--Test drive registration-->
+    <string name="registration">Đăng ký lái thử</string>
+    <string name="registration_hint_name">Nhập họ tên</string>
+    <string name="registration_hint_phone">Nhập số điện thoại</string>
+    <string name="registration_hint_email">Nhập email</string>
+    <string name="registration_hint_note">Nhập ghi chú</string>
+    <string name="registration_request">(*)</string>
+    <string name="registration_register">Đăng ký</string>
+    <string name="registration_select_city">Chọn thành phố</string>
+    <string name="registration_select_agency">Chọn đại lý</string>
+    <string name="registration_title_city">Thành phố (*)</string>
+    <string name="registration_title_agency">Đại lý (*)</string>
+    <string name="registration_title_name">Họ tên (*)</string>
+    <string name="registration_title_phone">Số điện thoại (*)</string>
+    <string name="registration_title_email">Email (*)</string>
+    <string name="registration_title_note">Ghi chú</string>
+    <string name="registration_empty_name">Họ tên không được để trống</string>
+    <string name="registration_empty_phone">Số điện thoại không được để trống</string>
+    <string name="registration_empty_email">Email không được để trống</string>
+    <string name="registration_empty_car">Mục chọn xe không được để trống</string>
+    <string name="registration_empty_city">Mục thành phố không được để trống</string>
+    <string name="registration_empty_agency">Mục đại lý không được để trống</string>
+    <string name="registration_register_success">Đăng ký thành công</string>
+    <string name="registration_tip_update_profile">Cập nhật thông tin cá nhân bằng thông tin đăng ký.</string>
+
+    <!--screen price advice-->
+    <string name="price_advice">Tư vấn giá xe</string>
+    <string name="price_advice_select_year">Chọn phiên bản</string>
+    <string name="price_advice_select_arena">Chọn khu vực</string>
+    <string name="price_advice_cost_title">Giá bán</string>
+    <string name="price_advice_cost_prediction">Dự toán chi phí</string>
+    <string name="price_advice_total_register_car">Tổng chi phí đăng ký xe</string>
+    <string name="price_advice_total_money_pay">Tổng số tiền thanh toán</string>
+    <string name="price_advice_register_money">Phí đăng ký</string>
+    <string name="price_advice_inspection_fee">Phí kiểm định:</string>
+    <string name="price_advice_cost_using_road">Phí sử dụng đường bộ/năm:</string>
+    <string name="price_advice_insurance">Bảo hiểm trách nhiệm dân sự/năm:</string>
+    <string name="price_advice_car_pay">Giá bán xe </string>
+    <string name="price_advice_registration_fee">Lệ phí trước bạ </string>
+    <string name="price_advice_provisional">TẠM TÍNH: </string>
+    <string name="price_advice_vat_note">Mức biểu phí trên đây là tạm tính và có thể thay đổi do sự thay đổi của thuế và các bên cung cấp dịch vụ khác. Mức bảo hiểm đã gồm 10% VAT. </string>
+
+    <!--Screen support comment/complaint-->
+    <string name="support_comment_complaint_sent">Gửi</string>
+    <string name="support_comment_complaint_title">Góp ý/ Khiếu nại</string>
+    <string name="support_comment_complaint_name">Họ tên (*)</string>
+    <string name="support_comment_complaint_email">Email (*)</string>
+    <string name="support_comment_complaint_phone">Số điện thoại (*)</string>
+    <string name="support_comment_complaint_license_plate">Biển số xe</string>
+    <string name="support_comment_complaint_tips_license_plate">Biển số viết liền không dùng dấu . và dấu cách</string>
+    <string name="support_comment_complaint_problems_encountered">Vấn đề gặp phải (*)</string>
+    <string name="support_comment_complaint_problems_encountered_title">Tiêu đề (*)</string>
+    <string name="support_comment_complaint_problems_encountered_content">Nội dung (*)</string>
+    <string name="support_comment_complaint_tips">Quý khách vui lòng điền đầy đủ các thông tin có dấu (*)</string>
+    <string name="support_comment_complaint_tips_choose_problems">Quý khách vui lòng chọn vấn đề gặp phải!</string>
+
+    <string-array name="support_commnet_complaint_arr_porblems">
+        <item>Chọn vấn đề</item>
+        <item>Kỹ thuật</item>
+        <item>Chính sách bảo hành</item>
+        <item>Tốc độ phục vụ</item>
+        <item>Vấn đề khác</item>
+    </string-array>
+
+    <!--Screen notification-->
+    <string name="notification_title">Thông báo</string>
+
+    <!--Screen home-->
+    <string name="home_login_now">Đăng nhập ngay</string>
+    <string name="home_login_now_des">Đăng nhập để tận dụng tất cả những hỗ trợ và ưu đãi dành riêng cho chủ sở hữu xe Hyundai</string>
+    <string name="home_login">Đăng nhập</string>
+    <string name="home_add_card">Thêm thẻ</string>
+    <string name="home_benefit">Quyền lợi</string>
+    <string name="home_card_info">Thông tin thẻ</string>
+    <string name="home_copyright">© Copyright 2015 Hyundai thanhcong\nAll rights Reserved</string>
+    <string name="home_hotline">Hotline</string>
+    <string name="home_follow_us">Follow us</string>
+
+    <!--Screen notification detail-->
+    <string name="notification_detail_title">Thông báo</string>
+    <string name="notification_detail_title_2">Bảo trì hệ thống</string>
+    <string name="notification_detail_mess_1">Hệ thống sẽ tạm ngừng để bảo trì từ 00:00 đến 05:00 ngày 19/09/2018.\n\n\nMong quý khách thông cảm, xin cảm ơn!</string>
+    <string name="notification_detail_mess_2">Mong quý khách thông cảm, xin cảm ơn!</string>
+    <string name="notification_detail_mess_3">Khi Khách hàng đưa xe đến bảo dưỡng, sửa chữa nhanh tại sự kiện sẽ nhận ưu đãi lớn nhất năm:\n\n
+    Giảm giá 20% dầu bảo dưỡng\n\n
+        Giảm giá 20% phụ tùng bảo dưỡng và công thợ\n\n
+    Giảm giá 10% dung dịch</string>
+    <string name="notification_detail_mess_4">Mọi chi tiết xin vui lòng liên hệ:</string>
+    <string name="notification_detail_mess_hotline">Hotline:</string>
+    <string name="notification_detail_mess_hotline_1"> 0902 119 698</string>
+    <string name="notification_detail_mess_hotline_2">04 3681 3968</string>
+    <string name="notification_detail_mess_mess_5">Hoặc truy cập:</string>
+    <string name="notification_detail_mess_web_url">http://hyundaigiaiphong.com.vn</string>
+    <string name="notification_detail_mess_mess_6">Website:</string>
+
+    <!--Screen Installment-->
+    <string name="installment_error">Có lỗi xảy ra. Vui lòng thử lại sau</string>
+    <string name="installment">Tư vấn trả góp</string>
+    <string name="installment_total_price">Giá tổng cộng (VNĐ)</string>
+    <string name="installment_total_price_input">Nhập giá</string>
+    <string name="installment_loan">Số tiền vay (VNĐ)</string>
+    <string name="installment_loan_input">Nhập số tiền</string>
+    <string name="installment_loan_percent">Nhập %</string>
+    <string name="installment_price_car">% giá tổng cộng</string>
+    <string name="installment_time">Thời hạn vay (Tháng)</string>
+    <string name="installment_time_input">Nhập thời hạn vay</string>
+    <string name="installment_interest1">Lãi suất năm đầu (%/năm)</string>
+    <string name="installment_interest2">Lãi suất năm thứ 2 trở đi (%/năm)</string>
+    <string name="installment_interest_input">Nhập lãi suất</string>
+    <string name="installment_calculation">Tính toán</string>
+    <string name="installment_export_pdf">Xuất PDF</string>
+    <string name="installment_term">Kỳ thanh toán</string>
+    <string name="installment_total_debt">Tổng số gốc còn nợ:</string>
+    <string name="installment_original">Gốc trong tháng:</string>
+    <string name="installment_interest">Lãi trong tháng:</string>
+    <string name="installment_original_interest">Gốc + Lãi:</string>
+    <string name="installment_empty">Vui lòng nhập đủ thông tin</string>
+    <string name="installment_total_pay">Tổng số tiền phải trả</string>
+    <string name="installment_total_loan">Tổng lãi phải trả</string>
+
+    <!--Screen profile add card-->
+    <string name="profile_add_card_error_add_card_no">Mã thẻ hội viên không hợp lệ</string>
+    <string name="profile_add_card_error_add_card_empty">Mã thẻ hội viên trống</string>
+    <string name="profile_add_card_error_add_card_is_exist">Thẻ đã tồn tại</string>
+    <string name="profile_add_card_title">Thêm thẻ hội viên</string>
+    <string name="profile_add_card_no">Mã thẻ hội viên</string>
+    <string name="profile_add_card_add">Thêm thẻ</string>
+    <string name="profile_add_card_add_hint">Nhập mã thẻ</string>
+    <string name="profile_add_card_dialog_title">Thêm thẻ hội viên thành công</string>
+    <string name="profile_add_card_success">Hoàn thành</string>
+
+    <!--Screen confirm login-->
+    <string name="login_confirm_title">Xác nhận đăng nhập</string>
+    <string name="login_confirm_tips">Điền mã OTP đã được gửi tới số điện thoại của Quý khách</string>
+    <string name="login_confirm_hint_code">Nhập mã OTP</string>
+    <string name="login_confirm_confirm">Xác nhận</string>
+    <string name="login_confirm_tis_time">Mã OTP hết hạn sau 00:30</string>
+    <string name="login_confirm_resent">Gửi lại mã OTP</string>
+    <string name="login_confirm_invalid_code">Mã OTP không hợp lệ.</string>
+    <string name="login_confirm_input_empty">Vui lòng điền OTP để hoàn tất quá trình đăng nhập</string>
+    <string name="login_confirm_time_out_in">Mã OTP hết hạn sau %02d:%02d</string>
+    <string name="login_confirm_time_out">Mã OTP đã hết hạn</string>
+    <string name="login_confirm_time_out_code">0000000</string>
+
+    <!--Screen request login-->
+    <string name="login_request_title">Yêu cầu đăng nhập</string>
+    <string name="login_request_message">Vui lòng đăng nhập để sử dụng tính năng này.</string>
+
+    <!--Screen benefit-->
+    <string name="benefit_title">Quyền lợi</string>
+    <string name="benefit_title_2">Danh sách xe được hưởng quyền lợi</string>
+    <string name="benefit_license_place">Biển số:</string>
+
+    <!--Screeen select car-->
+    <string name="select_car_error_require">Vui lòng trả lời hết các câu hỏi trước khi tìm hoàn tất.</string>
+
+    <string-array name="arr_select_car">
+        <item>Tất cả</item>
+        <item>Xe du lịch</item>
+        <item>Xe SUV,MPV</item>
+        <item>Xe chuyên dụng, tải nhẹ</item>
+        <item>Xe tải nhẹ</item>
+    </string-array>
+    <string-array name="arr_select_car_sort">
+        <item>Giá từ thấp đến cao</item>
+        <item>Giá từ cao đến thấp</item>
+        <!--<item>Sản phẩm bán chạy nhất</item>-->
+    </string-array>
+    <string name="select_car">Chọn xe</string>
+    <string name="select_car_filter_price">Giá xe</string>
+    <string name="select_car_filter_smaller"> \u003E 500 triệu </string>
+    <string name="select_car_filter_lager"> \u003C 500 triệu </string>
+    <string name="select_car_filter_capacity"> Dung tích </string>
+    <string name="select_car_filter_bellow"> Dưới 1,5L </string>
+    <string name="select_car_filter_above"> Trên 1,5L </string>
+    <string name="select_car_filter_gear"> Hộp số </string>
+    <string name="select_car_filter_AT"> Số tự động AT </string>
+    <string name="select_car_filter_MT"> Số sàn MT </string>
+    <string name="select_car_filter_CTV"> Số vô cấp CTV </string>
+    <string name="select_car_filter_list_product"> Danh sách sản phẩm: </string>
+    <string name="select_car_message_empty">Bạn chưa chọn mục nào</string>
+    <string name="select_car_message">Hãy trả lời các câu hỏi dưới đây để tim ra chiếc xe phù hợp nhất cho bạn.</string>
+    <string name="select_car_radio_title">4–5 người</string>
+    <string name="select_car_radio_message">1. Gia đình bạn có bao nhiêu người?</string>
+
+    <!--Screen all car-->
+    <string name="all_car">Danh sách xe</string>
+
+    <!--Screen choose car-->
+    <string name="choose_car_button">Chọn lại</string>
+    <string name="choose_car_message">xe phù hợp với câu trả lời</string>
+    <string name="choose_car_error">Có lỗi xảy ra, vui lòng thử lại sau.</string>
+
+
+    <!--Screen profile card detail-->
+    <string name="profile_card_detail_title">Thông tin thẻ</string>
+    <string name="profile_card_detail_history">Lịch sử</string>
+    <string name="profile_card_detail_delete_card">Xóa thẻ</string>
+    <string name="profile_card_detail_info">Thông tin thẻ</string>
+    <string name="profile_card_detail_date_active">Ngày kích hoạt</string>
+    <string name="profile_card_detail_point">Điểm tích trong kỳ</string>
+    <string name="profile_card_detail_value">Giá trị sử dụng trong kỳ</string>
+    <string name="profile_card_detail_balance">Giá trị còn lại</string>
+    <string name="profile_card_detail_date_end">Ngày hết kỳ xét hạng</string>
+    <string name="profile_card_detail_agency_register">Đại lý đăng ký</string>
+    <string name="profile_card_detail_info_car">Thông tin xe</string>
+    <string name="profile_card_detail_register_maintenance">Đăng ký bảo dưỡng</string>
+    <string name="profile_card_detail_car_vin">Số VIN:</string>
+    <string name="profile_card_detail_car_licese_plates">Biển số:</string>
+    <string name="profile_card_detail_car_date_purchase">Ngày mua</string>
+    <string name="profile_card_detail_list_benefit">Danh sách quyền lợi từ đại lý:</string>
+    <string name="profile_card_detail_message_confirm_delete">Bạn có chắc chắn muốn xóa thẻ hội viên này không?</string>
+    <string name="profile_card_detail_message_sussess_delete">Xóa thẻ thành công</string>
+
+    <!--Screen promotion-->
+    <string name="agency_promotion_title">Khuyến mãi từ đại lý</string>
+    <string name="htc_promotion_title">Khuyến mãi từ HTC</string>
+
+    <!--Screen setting-->
+    <string name="setting_title">Thiết lập</string>
+    <string name="setting_receive_information">Thiết lập tiếp nhận thông tin</string>
+    <string name="setting_notification">Thông báo</string>
+    <string name="setting_newsfeed">News feed</string>
+
+    <!--Screen map-->
+    <string name="map_api">AIzaSyCsRclrROvp20tcjANjPqPdnxDRGxmXISg</string>
+    <string name="map_title">Tìm đại lý</string>
+    <string name="map_title_button_contact">Liên hệ</string>
+    <string name="map_title_button_google_map">Google map</string>
+    <string name="map_title_button_direction">Chỉ đường</string>
+    <string name="map_title_work_shop">Xưởng dịch vụ</string>
+    <string name="map_title_show_room">Phòng trưng bày</string>
+    <string name="map_hotline1">Hotline CSKH:</string>
+    <string name="map_hotline2">Hotline Bán hàng:</string>
+    <string name="map_hotline3">Hotline Dịch vụ:</string>
+
+    <!--Screen search-->
+    <string name="search_title">Tìm kiếm đại lý</string>
+    <string name="search_filter">Tìm đại lý theo thành phố hoặc tên</string>
+    <string name="search_or">hoặc</string>
+    <string name="search_input_city">Nhập tên thành phố</string>
+    <string name="search_input_agency">Nhập tên đại lý</string>
+    <string name="search_button_title">Tìm kiếm</string>
+
+    <!--Item detail location-->
+    <string name="item_detail_location_title">Huyndai Lê Văn Lương</string>
+    <string name="item_detail_location_address">68 Lê Văn Lương, Phường Nhân Chính, Quận Thanh Xuân, TP Hà Nội</string>
+    <string name="item_detail_location_phone">0904 639 909</string>
+    <string name="item_detail_location_website">https://huyndailevanluong.vn</string>
+    <string name="item_detail_location_button_phont">Liên hệ đại lý</string>
+    <string name="item_detail_location_button_location">Chỉ đường tới đại lý</string>
+    <string name="item_detail_location_distance">0,0km</string>
+
+
+    <!--Screen benefit detail-->
+    <string name="benefit_detail_title">Quyền lợi</string>
+    <string name="benefit_detail_title_detail">Tích điểm khi sử dụng dịch vụ</string>
+    <string name="benefit_detail_message">Bạn sẽ được tích điểm tương đương với 5% giá trị sử dụng dịch vụ. Điểm được tích lũy sẽ được sử dụng cho lần sử dụng dịch vụ sau.</string>
+    <string name="benefit_detail_title_agency">Danh sách đại lý áp dụng:</string>
+    <string name="benefit_detail_item_agency_name">Đại lý:</string>
+    <string name="benefit_detail_item_agency_address">Địa chỉ:</string>
+    <string name="benefit_detail_item_agency_contact">Liên hệ:</string>
+    <string name="benefit_detail_error_load_item">Không lấy được thông tin chi tiết của quyền lợi.\nQuý khách vui lòng thử lại sau!</string>
+
+    <!--Screen detail car-->
+    <string name="detail_car_open">Mở Catalog</string>
+    <string name="detail_car_compare">So sánh</string>
+    <string-array name="detail_car_title_option">
+        <item>@string/detail_car_highlights</item>
+        <item>@string/detail_car_exterior</item>
+        <item>@string/detail_car_furniture</item>
+        <item>@string/detail_car_operation</item>
+        <item>@string/detail_car_safe</item>
+        <item>@string/detail_car_convenient</item>
+        <item>@string/detail_car_catalog</item>
+    </string-array>
+    <string name="detail_car_highlights">Nổi bật</string>
+    <string name="detail_car_exterior">Ngoại thất</string>
+    <string name="detail_car_furniture">Nội thất</string>
+    <string name="detail_car_operation">Vận hành</string>
+    <string name="detail_car_safe">An toàn</string>
+    <string name="detail_car_convenient">Tiện nghi</string>
+    <string name="detail_car_catalog">Thông số xe</string>
+    <string name="detail_car_download">Tải Catalog</string>
+    <string name="detail_car_price">Tư vấn giá</string>
+    <string name="detail_car_register">Đăng ký lái thử</string>
+    <string name="detail_car_error_load">Xe không tồn tại hoặc đang được cập nhật. Quý khách vui lòng quay lại sau</string>
+    <string name="detail_car_error_catalog">Liên kết hiện không khả dụng. Vui lòng thử lại sau</string>
+
+    <!--Screen card history-->
+    <string name="profile_card_history_title">Lịch sử thẻ thành viên</string>
+    <string name="profile_card_history_time_start">Từ ngày</string>
+    <string name="profile_card_history_time_end">Đến ngày</string>
+
+    <string-array name="profile_card_history_arr_tab">
+        <item>Tích điểm</item>
+        <item>Tiêu điểm</item>
+        <item>Sử dụng ưu đãi</item>
+    </string-array>
+    <string name="profile_card_detai_error_load_preview">Hiện tại không thể xem. Quý khách vui lòng thử lại sau!</string>
+    <!--Screen card history item-->
+    <string name="card_history_point_title_first">Mã giao dịch</string>
+    <string name="card_history_point_title_second">Số thẻ</string>
+    <string name="card_history_point_title_third">Hạng thẻ</string>
+
+    <string name="card_history_use_point_title_first">Mã giao dịch</string>
+    <string name="card_history_use_point_title_second">Số thẻ</string>
+    <string name="card_history_use_point_title_third">Hạng thẻ</string>
+
+    <string name="card_history_endow_title_first">Mã giao dịch</string>
+    <string name="card_history_endow_title_second">Mã chương trình</string>
+    <string name="card_history_endow_title_third">Tên chương trình</string>
+
+    <string name="profile_card_history_error_load_card_id">Không thể lấy lịch sử của thẻ này. Quý khách vui lòng thử lại sau!</string>
+    <string name="profile_card_history_error_load_time">Thời gian không đúng, quý khách vui lòng nhập đúng thời gian theo định dạng: dd/MM/yyyy.\nVí dụ: 10/10/2018</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Screen survey-->
+    <string name="error_load_question">Đã xảy ra sự cố. Vui lòng thử lại sau.</string>
+    <string name="survey_error_available">Khảo sát tạm thời chưa mở. Vui lòng thử lại sau</string>
+    <string name="survey_default_error">Không có dữ liệu</string>
+
+    <string name="survey_title">Khảo sát</string>
+    <string name="survey_title_buy">Bảng tìm hiểu \nÝ kiến khách hàng \nvề Bán hàng</string>
+
+    <string name="survey_btn_next">Tiếp tục</string>
+    <string name="survey_title_first_show">HYUNDAI THÀNH CÔNG VIỆT NAM</string>
+    <string name="survey_info">Tổng đài: 1900 561212\nEmail: cs@hyundai-thanhcong.vn\nWeb: http://hyundai-thanhcong.vn</string>
+    <string name="survey_title_first_show_2">Bảng Tìm hiểu Ý kiến Khách hàng về Dịch Vụ</string>
+    <string name="survey_title_first_show_message">Xin chân thành cám ơn Quý Khách đã tin tưởng và lựa chọn dòng xe Hyundai!\n\nĐể nâng cao chất lượng Dịch vụ, Hyundai Thành Công rất mong Quý khách bớt chút thời gian để trả Iời bảng câu hỏi về lần bảo dưỡng/sửa chữa (BD/SC) gần đây nhất.\n\nChúng tôi Xin gửi tri ân món quà nhỏ sau khi nhận được phản hồi từ Ouý khách.\n\nQuý khách Vui lòng trả Iời các câu hỏi dưới đây.</string>
+    <string name="survey_confirm_exit">Bạn có chắc chắn không muốn tiếp tục khảo sát không?</string>
+    <string name="survey_btn_previous">Quay lại</string>
+    <string name="survey_success_title">Bản khảo Sát của quý khách\nđã được gửi!</string>
+    <string name="survey_dialog_success_message"> Cảm ơn những ý kiến đóng góp chân thành của quý khách hàng dành cho công ty</string>
+    <string name="survey_dialog_success_ok">Về trang chủ</string>
+    <string name="survey_btn_success">Hoàn thành</string>
+    <string name="survey_tip_require">* Bắt buộc phải nhập</string>
+    <string name="survey_error_answer_require">Quý khách vui lòng điền đầy đủ các thông tin có dấu (*)</string>
+    <string name="survey_tip_2">Vui lòng đánh giá các mục dưới đây  (Mức: 1 = Kém nhất, 10 = Tốt nhất)</string>
+    <string name="survey_check_box_more">Khác</string>
+    <string name="survey_complete_first">Vui lòng hoàn thành hết các câu hỏi trước đó</string>
+
+    <string name="survey_error_date_format">Ngày không hợp lệ.</string>
+
+    <!--Screen Use card-->
+    <string name="use_card_text">Đặt khung quét mã QR Code vào đúng\nvị trí ảnh QR Code.</string>
+    <string name="use_card_done">Ẩn thẻ</string>
+
+    <!--Screen support guide-->
+    <string name="support_guide">Hướng dẫn</string>
+    <string-array name="support_guide_arr_tab">
+        <item>Hướng dẫn\nkỹ thuật</item>
+        <item>Sách\nhướng dẫn</item>
+        <item>Chính sách\nbảo hành</item>
+    </string-array>
+
+    <!--Screen warranty policy-->
+    <string name="support_guide_warranty_policy_title">Chính sách bảo hành</string>
+    <string name="support_guide_warranty_policy_prefix">*</string>
+    <string name="support_guide_warranty_policy_title_detail">Chi tiết</string>
+
+    <!--Screen support guide detail-->
+    <string name="support_book_guide_detail">Sách hướng dẫn</string>
+    <string name="support_book_guide_detail_history_title">Mục lục</string>
+    <string name="support_book_guide_error_load">Tạm thời không thể xem, Quý khách vui lòng thử lại sau!</string>
+    <string name="support_book_guide_error_show">Sách này đang được cập nhật. Quý khách vui lòng quay lại sau</string>
+
+    <!--Screen car comparison-->
+    <string name="car_comparison_title">So sánh</string>
+    <string name="car_comparison_info">Thông tin</string>
+    <string name="car_comparison_change_car">Đổi xe</string>
+
+    <!--Screen profile car-->
+    <string name="profile_car_delete_success">Xoá xe thành công</string>
+    <string name="profile_error_empty_name">Họ tên không được để trống</string>
+    <string name="profile_error_invalid_name">Họ tên sai định dạng</string>
+    <string name="profile_info_error_email">Email không hợp lệ</string>
+    <string name="profile_info_error_indentify">Số chứng minh thư không hợp lệ</string>
+    <string name="profile_error_empty_birthday">Ngày sinh không được để trống</string>
+
+    <!--tabbar-->
+    <string name="tabba_home">TRANG CHỦ</string>
+    <string name="tabbar_buy_car">MUA XE</string>
+    <string name="tabbar_service">DỊCH VỤ</string>
+    <string name="tabbar_news">TIN TỨC</string>
+    <string name="tabbar_support">HỖ TRỢ</string>
+    <string name="buy_car_no_data">Không tìm thấy!</string>
+    <string name="home_add_membership_card">Thêm thẻ hội viên</string>
+    <string name="card_user_card">Sử dụng thẻ</string>
+    <string name="home_add_card_message">Thêm thẻ hội viên để xem được quyền lợi của bạn</string>
+    <string name="ignore">Bỏ qua</string>
+    <string name="make_appointment_service_list_error">Hiện không thế tạo lịch hẹn mới. Quý khách vui lòng thử lại sau</string>
+    <string name="make_appointment_info_date_hint">dd/mm/yyyy</string>
+    <string name="support_book_guide_detail_empty">Không có dữ liệu</string>
+    <string name="make_appointment_info_choose_time">Chọn thời gian đặt lịch hẹn</string>
+    <string name="dlg_done">Hoàn tất</string>
+
+
+    <!--Screen profile edit-->
+    <string name="profile_edit_hint_name">Nhập họ tên</string>
+    <string name="profile_edit_title_confirm">Cập nhật thông tin cá nhân</string>
+    <string name="profile_edit_title">Sửa thông tin cá nhân</string>
+    <string name="profile_edit_save">Lưu</string>
+    <string name="profile_edit_cancel">Bỏ qua</string>
+    <string name="profile_edit_message_error">Số CMND không hợp lệ</string>
+    <string name="profile_error_birthday_validate">Ngày sinh không chính xác</string>
+    <string name="profile_error_address">Chưa chọn tỉnh / thành phố</string>
+
+    <string name="custom_view_pager_update">Cập nhật</string>
+    <string name="asset_statements">
+        [{
+        \"relation\": [\"delegate_permission/common.handle_all_urls\"],
+        \"target\": {
+          \"namespace\": \"web\",
+          \"site\": \"http://huyndai.vn/survey\"
+        }
+      }]
+    </string>
+
+    <string name="profile_edit_hint_address">- Chọn tỉnh/thành phố -</string>
+
+    <string name="profile_edit_hint_brithday">Nhập ngày sinh</string>
+    <string name="profile_edit_hint_identify_id">CMND/căn cước/hộ chiếu</string>
+    <string name="profile_edit_hint_email">Nhập email</string>
+    <string name="profile_edit_hint_phone">Nhập số điện thoại</string>
+
+
+    <!--Dialog download-->
+    <string name="dialog_download_title">Tải xuống tập tin</string>
+    <string name="dialog_download_cancel">Hủy</string>
+    <string name="dialog_download_open">Mở File</string>
+    <string name="dialog_download_close">Đóng</string>
+    <string name="all_car_all">Tất cả</string>
+    <string name="dialog_profile_add_card_agency">Đại lý:</string>
+    <string name="dialog_profile_add_card_card_number">Mã số thẻ:</string>
+    <string name="dialog_profile_add_card_customer_name">Tên khách hàng:</string>
+    <string name="dialog_profile_add_card_model">Mẫu xe:</string>
+    <string name="dialog_profile_add_card_license_plates">Biển số xe:</string>
+
+    <!--Screen cop-->
+    <string name="crop_btn">Lưu</string>
+    <string name="crop_btn_cancel">Hủy</string>
+    <string name="crop_error">Có lỗi xảy ra. Vui lòng thử lại sau</string>
+
+    <!--Banner survey-->
+    <string name="banner_survey_name_sell">KHẢO SÁT BÁN HÀNG</string>
+    <string name="banner_survey_name_service">KHẢO SÁT MỨC ĐỘ\nHÀI LÒNG VỀ DỊCH VỤ</string>
+    <string name="banner_survey_des">Giúp Hyundai Thành Công phục vụ\nquý khách ngày một tốt hơn</string>
+    <string name="banner_survey_make_survey">LÀM KHẢO SÁT</string>
+    <string name="_0">0</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigation_type="BACK"
+        app:title="@string/add_car_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_padding_1_5x">
+
+            <ImageView
+                android:id="@+id/imCarPreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <com.tvo.htc.view.component.CpnSpinner
+                android:id="@+id/cpnSpinnerListCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                android:layout_marginBottom="@dimen/margin_padding_0_4x"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/TextView_TitleEdit"
+                android:layout_marginBottom="@dimen/margin_padding_0_4x"
+                android:text="@string/add_car_tip" />
+
+            <TextView
+                style="@style/TextView_TitleEdit"
+                android:text="@string/add_car_license_plate" />
+
+            <EditText
+                android:id="@+id/edtLicensePlate"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_0_5x"
+                android:text="@string/add_car_tip_license_plate"
+                android:textColor="@color/colorTextSub" />
+
+            <TextView
+                style="@style/TextView_TitleEdit"
+                android:text="@string/add_car_number_vin" />
+
+            <EditText
+                android:id="@+id/edtNumberVIN"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:maxLength="17"
+                android:textColor="@color/colorText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.tvo.htc.view.component.CpnButton
+        android:id="@+id/cpnbSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_1_5x"
+        android:layout_marginRight="@dimen/margin_padding_1_5x"
+        android:layout_marginBottom="@dimen/margin_padding_2x"
+        app:text="@string/add_car_btn_save"
+        app:type="BLUE" />
+</LinearLayout>

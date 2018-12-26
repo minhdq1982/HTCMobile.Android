@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/margin_padding_1x">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_step_2" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/flBottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_2x"
+                    android:layout_marginBottom="@dimen/margin_padding_0_8x">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/make_appointment_info_customer_title"
+                        android:textSize="@dimen/text_size_24"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_padding_1_2x"
+                    android:paddingLeft="@dimen/margin_padding_1_2x"
+                    android:paddingRight="@dimen/margin_padding_1_2x"
+                    android:text="@string/make_appointment_info_tips_2" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding_1_2x">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/make_appointment_info_customer_title_2"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView_TitleEdit"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_customer_full_name" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.tvo.htc.view.component.CpnSpinner
+                            android:id="@+id/spinerHonorific"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/editFullName"
+                            style="@style/EditText.MakeAppointment"
+                            android:layout_marginLeft="@dimen/margin_padding_1_2x"
+                            android:hint="@string/make_appointment_info_customer_full_name_hint"
+                            android:imeOptions="actionNext"
+                            android:lines="1" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextView_TitleEdit"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_customer_email" />
+
+                    <EditText
+                        android:id="@+id/editEmail"
+                        style="@style/EditText.MakeAppointment"
+                        android:hint="@string/make_appointment_info_customer_email_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:lines="1" />
+
+
+                    <TextView
+                        style="@style/TextView_TitleEdit"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_customer_phone" />
+
+                    <EditText
+                        android:id="@+id/editPhone"
+                        style="@style/EditText.MakeAppointment"
+                        android:hint="@string/make_appointment_info_customer_phone_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="12" />
+
+                    <TextView
+                        style="@style/TextView_TitleEdit"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_customer_note" />
+
+                    <EditText
+                        android:id="@+id/editNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:hint="@string/make_appointment_info_customer_note_hint"
+                        android:imeOptions="actionNext"
+                        android:maxLength="200"
+                        android:maxLines="5"
+                        android:minHeight="@dimen/edit_text_height"
+                        android:paddingBottom="@dimen/margin_padding_0_5x"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorTextGray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:id="@+id/chkUpdateProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/bg_checkbox"
+                            android:checked="true" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_padding_0_8x"
+                            android:text="@string/make_appointment_update_profile" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_5x"
+                        android:text="@string/make_appointment_info_customer_car_title"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rdCarInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_1_9x"
+                        android:layout_marginBottom="@dimen/margin_padding_0_9x"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbUseMyCar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/bg_radio"
+                            android:checked="true"
+                            android:paddingLeft="@dimen/margin_padding_0_8x"
+                            android:text="@string/make_appointment_info_choose_profile" />
+
+                        <RadioButton
+                            android:id="@+id/rbSelectCar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_padding_3_5x"
+                            android:button="@drawable/bg_radio"
+                            android:paddingLeft="@dimen/margin_padding_0_8x"
+                            android:text="@string/make_appointment_info_choose_new" />
+                    </RadioGroup>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/llUseCar"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/TextView_TitleEdit"
+                                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                                android:text="@string/make_appointment_info_customer_car_category" />
+
+                            <com.tvo.htc.view.component.CpnSpinner
+                                android:id="@+id/spinerProfileCar"
+                                app:sp_background="@drawable/bg_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/llSelectCar"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/TextView_TitleEdit"
+                                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                                android:text="@string/make_appointment_info_customer_car_category" />
+
+                            <com.tvo.htc.view.component.CpnSpinner
+                                android:id="@+id/spinerCar"
+                                app:sp_background="@drawable/bg_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                style="@style/TextView_TitleEdit"
+                                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                                android:text="@string/make_appointment_info_customer_car_versions" />
+
+                            <com.tvo.htc.view.component.CpnSpinner
+                                android:id="@+id/spinerVersion"
+                                app:sp_background="@drawable/bg_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                style="@style/TextView_TitleEdit"
+                                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                                android:text="@string/make_appointment_info_customer_car_license_plate" />
+
+                            <EditText
+                                android:id="@+id/editLicensePlate"
+                                style="@style/EditText.MakeAppointment"
+                                android:hint="@string/make_appointment_info_customer_license_place_hint"
+                                android:imeOptions="actionDone"
+                                android:lines="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_1_5x"
+                                android:gravity="center">
+
+                                <CheckBox
+                                    android:id="@+id/chkAddNewCar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/bg_checkbox"
+                                    android:checked="true" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_0_8x"
+                                    android:text="@string/make_appointment_add_car" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/flBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbPrevious"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:btn_icon_left="@drawable/ic_arrow_left_black"
+                app:text="@string/service_make_appointment_previous"
+                app:type="TRANSPARENT" />
+
+            <com.tvo.htc.view.component.CpnButton
+                android:id="@+id/cpnbNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                app:btn_icon_right="@drawable/ic_arrow_right_white"
+                app:text="@string/service_make_appointment_next"
+                app:type="BLUE2" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

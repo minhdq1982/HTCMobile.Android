@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:btFilterVisibility="VISIBLE"
+        app:navigation_type="BACK"
+        app:title="@string/all_car" />
+
+    <LinearLayout
+        android:id="@+id/layoutFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigationBar"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFilterCar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_tab_height"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvOptionCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_padding_0_5x"
+            android:visibility="gone"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="1"
+            tools:listitem="@layout/item_option_car" />
+
+    </LinearLayout>
+
+    <com.tvo.htc.view.component.CpnCustomRecyclerView
+        android:id="@+id/cpnRecyclerViewCar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutFilter" />
+
+    <LinearLayout
+        android:id="@+id/llFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigationBar"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding_1x"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_coin"
+            android:drawablePadding="@dimen/margin_padding_1x"
+            android:padding="@dimen/margin_padding_0_5x"
+            android:text="@string/select_car_filter_price"
+            android:textColor="@color/colorNearBlack"
+            android:textSize="@dimen/text_size_17"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSmaller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_0_5x"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_white_border_gray"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_0_5x"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingRight="@dimen/margin_padding_0_5x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:text="@string/select_car_filter_lager"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_size_default_14sp" />
+
+            <TextView
+                android:id="@+id/tvLager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_0_5x"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_white_border_gray"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_0_5x"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingRight="@dimen/margin_padding_0_5x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:text="@string/select_car_filter_smaller"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_size_default_14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_capacity"
+            android:drawablePadding="@dimen/margin_padding_1x"
+            android:padding="@dimen/margin_padding_0_5x"
+            android:text="@string/select_car_filter_capacity"
+            android:textColor="@color/colorNearBlack"
+            android:textSize="@dimen/text_size_17"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvBellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_0_5x"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_white_border_gray"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_0_5x"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingRight="@dimen/margin_padding_0_5x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:text="@string/select_car_filter_bellow"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_size_default_14sp" />
+
+            <TextView
+                android:id="@+id/tvAbove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_0_5x"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_white_border_gray"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_0_5x"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingRight="@dimen/margin_padding_0_5x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:text="@string/select_car_filter_above"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_size_default_14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_gear"
+            android:drawablePadding="@dimen/margin_padding_1x"
+            android:padding="@dimen/margin_padding_1x"
+            android:text="@string/select_car_filter_gear"
+            android:textColor="@color/colorNearBlack"
+            android:textSize="@dimen/text_size_17"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tvAT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_0_5x"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_white_border_gray"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_0_5x"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingRight="@dimen/margin_padding_0_5x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:text="@string/select_car_filter_AT"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_size_default_14sp" />
+
+            <TextView
+                android:id="@+id/tvMT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_0_5x"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_white_border_gray"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_0_5x"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingRight="@dimen/margin_padding_0_5x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:text="@string/select_car_filter_MT"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_size_default_14sp" />
+
+            <TextView
+                android:id="@+id/tvCTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_0_5x"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_white_border_gray"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_0_5x"
+                android:paddingTop="@dimen/margin_padding_1x"
+                android:paddingRight="@dimen/margin_padding_0_5x"
+                android:paddingBottom="@dimen/margin_padding_1x"
+                android:text="@string/select_car_filter_CTV"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_size_default_14sp" />
+        </LinearLayout>
+
+        <com.tvo.htc.view.component.CpnButton
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_1x"
+            app:text="@string/search_button_title" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llFilter"
+        android:background="@color/colorBlurSearch"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

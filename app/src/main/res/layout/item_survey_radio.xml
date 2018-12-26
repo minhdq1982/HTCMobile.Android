@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:paddingRight="@dimen/margin_padding_0_5x"
+    android:paddingBottom="@dimen/margin_padding_0_5x">
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        style="@style/SurveyText"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/bg_radio"
+        android:clickable="false"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/margin_padding_0_6x"
+        android:textSize="@dimen/text_size_survey"
+        tools:text="AAAAAAAAAAAAAAAAAAA" />
+</FrameLayout>

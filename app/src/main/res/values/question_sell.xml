@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Survey sell 1-->
+    <string name="question_sell_0_0_question">Quý khách có làm việc cho các hãng kinh doanh Ôtô/ các hãng nghiên cứu thị trường không?</string>
+    <string-array name="question_sell_0_0_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+    <string name="question_sell_0_1_question">Vui lòng xác nhận tên xe của Quý khách</string>
+
+    <string name="question_sell_0_2_question">Quý khách đã có sự lựa chọn dòng xe và model xe từ trước khi mua?</string>
+    <string-array name="question_sell_0_2_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+    <string name="question_sell_0_3_question">Quý khách đã mua xe ở đâu?</string>
+    <string-array name="question_sell_0_3_answer">
+        <item>Tại đại lý Hyundai ủy quyền</item>
+        <item>Khác</item>
+    </string-array>
+
+
+    <string name="question_sell_0_4_question">Quý khách có quen với bất kỳ ai trong Đại lý không?</string>
+    <string-array name="question_sell_0_4_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+
+    <string name="question_sell_0_5_question">Đây có phải là chiếc xe Hyundai đầu tiên của Quý khách không?</string>
+    <string-array name="question_sell_0_5_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+
+    <string name="question_sell_0_6_question">Chiếc xe trước đó của Quý khách là xe gì? (Hãng xe, tên xe)</string>
+
+    <string name="question_sell_0_7_question">A1. Quý khách đánh giá như thế nào về mức độ hài lòng nói chung đối với Đại lý?</string>
+
+    <string name="question_sell_0_8_question">A2. Quý khách có dự định giới thiệu Đại lý đó với bạn bè/người thân?</string>
+
+    <!--Survey sell 2-->
+    <string name="question_sell_1_0_question">B1. Quý khách đánh giá như thế nào về Cơ sở vật chất của Đại lý?</string>
+    <string name="question_sell_1_1_question">B2. Hình thức của showroom/ phòng trưng bày xe (có biển chỉ dẫn rõ ràng kèm giờ làm việc ghi trên cửa, trang trí đẹp mắt, bố cục gọn gàng, tiện nghi đầy đủ….):</string>
+    <string name="question_sell_1_2_question">B3. Tiện nghi của showroom (chỗ ngồi, lựa chọn đồ uống, nhiệt độ thoải mái ...):</string>
+    <string name="question_sell_1_3_question">B4. Xe trưng bày đảm bảo sạch sẽ và dễ quan sát:</string>
+    <string name="question_sell_1_4_question">B5. Mức độ sạch sẽ của đại lý (bên trong và bên ngoài showroom, …):</string>
+    <string name="question_sell_1_5_question">B6. Khu vực đỗ xe thuận tiện (dễ di chuyển và đỗ xe):</string>
+
+    <!--Survey sell 3-->
+    <string name="question_sell_2_0_question">C1. Quý khách đánh giá như thế nào về Nhân viên Đại lý?</string>
+    <string name="question_sell_2_1_question">C2. Về mức độ thân thiện của Nhân viên Đại lý:</string>
+    <string name="question_sell_2_2_question">C3. Về Khả năng hiểu rõ các nhu cầu của Quý khách:</string>
+    <string name="question_sell_2_3_question">C4. Về Khả năng trả lời các câu hỏi của Quý khách:</string>
+    <string name="question_sell_2_4_question">C5. Về Khả năng giới thiệu về xe cho Quý khách:</string>
+    <string name="question_sell_2_5_question">C6. Về Kiến thức sản phẩm:</string>
+
+    <!--Survey sell 4-->
+    <string name="question_sell_3_0_question">C7. Việc đảm bảo mọi cam kết trong quá trình mua xe?</string>
+    <string name="question_sell_3_1_question">C8. Quý khách có cảm thấy được đón tiếp tận tình và chu đáo không?</string>
+    <string name="question_sell_3_2_question">D1. Quý khách đánh giá thế nào về hoạt động lái thử xe?</string>
+    <string-array name="question_sell_3_2_sub_answer">
+        <item>Tôi không được mời lái thử xe</item>
+        <item>Tôi được mời lái thử xe nhưng từ chối tham dự</item>
+    </string-array>
+    <string name="question_sell_3_3_question">D2. Tư vấn bán hàng chủ động giới thiệu và đề xuất trải nghiệm các tính năng nổi trội của xe Hyundai:</string>
+    <string name="question_sell_3_4_question">D3. Sự sẵn sàng của xe lái thử (xe có sẵn ở showroom để lái thử không hay phải chờ, hẹn ngày khác..):</string>
+    <string name="question_sell_3_5_question">D4. Chất lượng của xe lái thử (các tính năng hoạt động ổn định, xe được vệ sinh sạch sẽ..):</string>
+
+    <!--Survey sell 5-->
+    <string name="question_sell_4_0_question">E1. Đánh giá chung của Quý khách về việc mua xe?</string>
+    <string name="question_sell_4_1_question">E2. Được giới thiệu đầy đủ về đặc điểm, tính năng và lợi ích của xe:</string>
+    <string name="question_sell_4_2_question">E3. Được giải thích về các phụ kiện theo xe:</string>
+    <string name="question_sell_4_3_question">E4. Được tư vấn về các phương án hỗ trợ tài chính (trả chậm, trả góp...):</string>
+    <string name="question_sell_4_4_question">E5. Được tư vấn về các loại hình bảo hiểm:</string>
+    <string name="question_sell_4_5_question">E6. Quý khách đánh giá như thế nào về thỏa thuận mua xe nói chung?</string>
+
+
+    <!--Survey sell 6-->
+
+    <string name="question_sell_5_0_question">F1. Quý khách đánh giá như thế nào về hoạt động giao xe?</string>
+    <string name="question_sell_5_1_question">F2. Về việc giao xe đúng hẹn:</string>
+    <string name="question_sell_5_2_question">F3. Về việc cập nhật thường xuyên thời gian giao xe:</string>
+    <string name="question_sell_5_3_question">F4. Tình trạng chung của xe khi bàn giao (Sạch sẽ, không xước xát, đúng như cam kết):</string>
+    <string name="question_sell_5_4_question">F5. Giải thích đầy đủ về chính sách bảo hành:</string>
+    <string name="question_sell_5_5_question">F6. Giải thích đầy đủ về lịch bảo dưỡng xe định kỳ:</string>
+    <string name="question_sell_5_6_question">F7. Giới thiệu với Quý khách tới Bộ phận Dịch vụ và Phụ tùng?:</string>
+
+
+    <!--Survey sell 7-->
+    <string name="question_sell_6_0_question">G1. Quý khách đánh giá như thế nào về việc liên hệ từ Đại lý sau khi giao xe?</string>
+    <string-array name="question_sell_6_0_sub_answer">
+        <item>Không được liên hệ</item>
+    </string-array>
+    
+    <string name="question_sell_6_0_desc">Nếu Quý khách chọn “Không được liên hệ”, vui lòng chuyển đến câu G3. Nếu Quý khách đưa ra mức điểm từ 1 đến 10, vui lòng tiếp tục với câu G2.</string>
+
+    <string name="question_sell_6_1_question">G2. Quý khách được liên hệ trong khoảng thời gian nào kể từ khi giao xe?</string>
+    <string-array name="question_sell_6_1_answer">
+        <item>Trong vòng một tuần</item>
+        <item>1 đến 2 tuần</item>
+        <item>Hơn 2 tuần hoặc lâu hơn</item>
+    </string-array>
+
+    <string name="question_sell_6_2_question">G3. Sau khi mua xe, Quý khách có gặp vấn đề nào đó cần phải liên hệ với Đại lý không?</string>
+    <string name="question_sell_6_2_desc">Nếu Quý khách chọn “Không”, vui lòng chuyển đến câu H1. Nếu Quý khách chọn “Có”, vui lòng tiếp tục với câu G4.</string>
+    <string-array name="question_sell_6_2_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+    <string name="question_sell_6_3_question">G4. Những vấn đề của Quý khách đã được giải quyết chưa?</string>
+    <string-array name="question_sell_6_3_answer">
+        <item>Đã được giải quyết</item>
+        <item>Chưa được giải quyết</item>
+    </string-array>
+
+    <string name="question_sell_6_4_question">G5. Quý khách đánh giá thế nào về việc xử lý các vấn đề đó?</string>
+    <string name="question_sell_6_4_desc">(Mức: 1 = Kém, 10 = tuyệt vời)</string>
+
+    <string name="question_sell_6_5_question">Vui lòng nêu chi tiết về những vấn đề đó:</string>
+
+    <!--Survey sell 8-->
+    <string name="question_sell_7_0_question">H1. Quý khách có dự định mua thêm xe từ Đại lý đó?</string>
+    <string name="question_sell_7_1_question">H2. Quý khách có dư định giới thiệu xe Hyundai với bạn bè/người thân?</string>
+    <string name="question_sell_7_2_question">H3. Quý khách có dự định mua thêm xe Hyundai?</string>
+    <string name="question_sell_7_3_question">H4. Quý khách sẽ thực hiện công việc Bảo dưỡng/sửa chữa ở đâu?</string>
+    <string-array name="question_sell_7_3_answer">
+        <item>Đại lý mua xe</item>
+        <item>Một gara tư nhân</item>
+        <item>Đại lý huyndai khác</item>
+        <item>Tự làm</item>
+        <item>Chưa biết</item>
+    </string-array>
+    <string name="question_sell_7_4_question">1. Quý khách đánh giá như thế nào về chất lượng nói chung của loại xe đã mua</string>
+    <string name="question_sell_7_4_desc">(Mức: 1 = Kém , 10 = tuyệt vời)</string>
+
+    <string name="question_sell_7_5_question">Vui lòng chia sẻ thêm ý kiến (nếu có):</string>
+
+    <!--Survey sell 9-->
+
+    <string name="question_sell_8_0_question">Quý khách có đồng ý chia sẻ các nội dung trong bản khảo sát này với Đại lý mua xe không?</string>
+    <string-array name="question_sell_8_0_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+    <string name="question_sell_8_1_question">Quý khách có muốn Đại lý liên lạc để trao đổi về các bình luận từ bản khảo sát này không?</string>
+    <string-array name="question_sell_8_1_answer">
+        <item>Có</item>
+        <item>Không</item>
+    </string-array>
+
+    <string name="question_sell_8_2_question">Vui lòng cho biết Họ tên của Quý khách</string>
+    <string name="question_sell_8_2_desc">(Thông tin được dùng để gửi Quà tri ân sau khi Quý khách gửi bảng trả lời)</string>
+
+    <string name="question_sell_8_3_question">Địa chỉ hiện tại của Quý khách</string>
+    <string name="question_sell_8_3_desc">(Thông tin được dùng để gửi Quà tri ân sau khi Quý khách gửi bảng trả lời)</string>
+
+    <string name="question_sell_8_4_question">Địa chỉ Email của Quý Khách</string>
+    <string name="question_sell_8_5_question">Số điện thoại di động/cố định của Quý khách</string>
+
+    <!--Survey sell 10-->
+    <string name="question_sell_9_0_question">Đại lý nơi Quý khách mua xe</string>
+    <string-array name="question_sell_9_0_answer">
+        <item>Accent</item>
+        <item>Avante</item>
+        <item>Creta</item>
+        <item>Elantra</item>
+        <item>Eon</item>
+        <item>Equus</item>
+        <item>Genesis</item>
+        <item>Getz</item>
+        <item>H100</item>
+        <item>i10</item>
+        <item>i20</item>
+        <item>i20 active</item>
+        <item>i30</item>
+        <item>Konta</item>
+        <item>Santa fee</item>
+        <item>Sonata</item>
+        <item>Starex</item>
+        <item>Tucson</item>
+        <item>Veloster</item>
+        <item>Veracruz</item>
+        <item>Verna</item>
+        <item>Khác</item>
+    </string-array>
+
+    <string name="question_sell_9_1_question">Quý khách biết đến thông tin về xe Hyundai qua kênh nào?</string>
+    <string name="question_sell_9_1_desc">(Có thể chọn 1 hay nhiều phương án)</string>
+
+    <string-array name="question_sell_9_1_answer">
+        <item>Quảng cáo trên Tivi</item>
+        <item>Quảng cáo online: trên các trang báo mạng, facebook, google,youtube...</item>
+        <item>Quảng cáo hộp đèn tại Trung tâm thương mại, chung cư, văn phòng, siêu thị, sân bay</item>
+        <item>Tạp chí</item>
+        <item>Radio</item>
+        <item>Biển bảng ngoài trời</item>
+
+    </string-array>
+</resources>

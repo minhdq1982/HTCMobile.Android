@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cpnbAccept"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_padding_2x"
+            android:layout_marginBottom="@dimen/margin_padding_2x"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_logo_term" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/term_title"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_padding_1x"
+            android:layout_marginTop="@dimen/margin_padding_1_5x"
+            android:layout_marginRight="@dimen/margin_padding_1x"
+            android:background="#2F111111" />
+    </LinearLayout>
+
+    <com.tvo.htc.view.component.CpnButton
+        android:id="@+id/cpnbAccept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_1x"
+        android:layout_marginTop="@dimen/margin_padding_1x"
+        android:layout_marginRight="@dimen/margin_padding_1x"
+        android:layout_marginBottom="@dimen/margin_padding_1x"
+        app:text="@string/term_accpect"
+        app:type="WHITE" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_padding_0_5x">
+
+    <ImageView
+        android:id="@+id/imgServiceIcon"
+        android:layout_width="@dimen/imge_service_list_size"
+        android:layout_height="@dimen/imge_service_list_size" />
+
+    <TextView
+        android:id="@+id/tvServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_1x" />
+</LinearLayout>

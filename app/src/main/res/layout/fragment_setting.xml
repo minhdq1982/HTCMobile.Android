@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tvo.htc.view.component.CpnNavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigation_type="BACK"
+        app:btNotificationVisibility="INVISIBLE"
+        app:title="@string/setting_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLine"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_padding_1_5x"
+            android:text="@string/setting_receive_information"
+            android:textColor="@color/color_text_bt_action"
+            android:textSize="@dimen/text_size_17" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_padding_1_5x">
+
+            <ImageView
+                android:layout_width="@dimen/support_icon_size"
+                android:layout_height="@dimen/support_icon_size"
+                android:src="@drawable/ic_setting_notification" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_1_5x"
+                android:layout_weight="1"
+                android:text="@string/setting_notification"
+                android:textSize="@dimen/text_size_17" />
+
+            <CheckBox
+                android:id="@+id/btnNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/bg_switch"
+                android:checked="false" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_padding_0_2x" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_padding_1_5x">
+
+            <ImageView
+                android:layout_width="@dimen/support_icon_size"
+                android:layout_height="@dimen/support_icon_size"
+                android:src="@drawable/ic_setting_newsfeed" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_1_5x"
+                android:layout_weight="1"
+                android:text="@string/setting_newsfeed"
+                android:textSize="@dimen/text_size_17" />
+
+            <CheckBox
+                android:id="@+id/btnNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/bg_switch"
+                android:checked="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_padding_1_5x" />
+
+        <LinearLayout
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_padding_1_5x">
+
+            <ImageView
+                android:layout_width="@dimen/support_icon_size"
+                android:layout_height="@dimen/support_icon_size"
+                android:src="@drawable/ic_logout" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_1_5x"
+                android:layout_weight="1"
+                android:text="@string/menu_logout"
+                android:textSize="@dimen/text_size_17" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

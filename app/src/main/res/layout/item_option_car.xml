@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_margin="@dimen/margin_padding_0_5x"
+    android:background="@drawable/bg_button_white_border_accent"
+    android:drawableRight="@drawable/ic_close_small"
+    android:drawablePadding="@dimen/margin_padding_1_5x"
+    android:gravity="left"
+    android:padding="@dimen/margin_padding_0_8x"
+    android:text="Dưới 500 triệu"
+    android:textColor="@color/colorOptionCar"
+    android:textSize="@dimen/text_size_14">
+
+</TextView>

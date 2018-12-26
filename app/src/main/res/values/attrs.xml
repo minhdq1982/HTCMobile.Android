@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="title" format="string" />
+    <attr name="text" format="string" />
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="float|dimension" />
+    <attr name="dimension" format="dimension" />
+    <attr name="backgroundDrawable" format="reference" />
+    <attr name="backgroundColor" format="color|reference" />
+    <attr name="src" format="reference" />
+    <attr name="icon" format="reference" />
+    <attr name="isClickItem" format="boolean" />
+
+    <declare-styleable name="CpnNavigationBar">
+        <attr name="tintBack"/>
+        <attr name="title" />
+        <attr name="textColor" />
+        <attr name="navigation_type" format="enum">
+            <enum name="LOGO" value="0" />
+            <enum name="BACK" value="1" />
+            <enum name="IGNORE" value="2" />
+            <enum name="SEARCH" value="3" />
+            <enum name="NONE" value="4" />
+        </attr>
+        <attr name="backgroundTransparent" format="boolean" />
+        <attr name="btFilterVisibility" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+        <attr name="btSearchVisibility" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+        <attr name="btCloseVisibility" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+        <attr name="btCancelVisibility" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+        <attr name="btCurrentCardVisibility" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+
+        <attr name="btSaveVisibility" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+
+        <attr name="btAddVisibility" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+
+        <attr name="btNotificationVisibility" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+
+        <attr name="btSettingVisibility" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CpnTab"></declare-styleable>
+    <declare-styleable name="CpnButton">
+        <attr name="btn_icon_left" format="reference" />
+        <attr name="btn_icon_right" format="reference" />
+        <attr name="text" />
+        <attr name="text_padding" format="dimension" />
+        <attr name="text_paddingLeft" format="dimension" />
+        <attr name="text_paddingTop" format="dimension" />
+        <attr name="text_paddingRight" format="dimension" />
+        <attr name="text_paddingBottom" format="dimension" />
+
+        <attr name="type" format="enum">
+            <enum name="BLUE" value="0" />
+            <enum name="WHITE" value="1" />
+            <enum name="WHITE_BORDER" value="2" />
+            <enum name="BLUE2" value="3" />
+            <enum name="TRANSPARENT" value="4" />
+            <enum name="TRANSPARENT_WHITE_BORDER" value="5" />
+            <enum name="GRAY" value="6" />
+        </attr>
+        <attr name="isCenterIcon" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CpnCustomButtonAction">
+        <attr name="text" />
+    </declare-styleable>
+    <declare-styleable name="CpnCustomTabView">
+        <attr name="isClickItem" />
+    </declare-styleable>
+    <declare-styleable name="CpnIndicator">
+        <attr name="isClickItem" />
+        <attr name="isUseState"/>
+        <attr name="icNormal" format="reference" />
+        <attr name="icSelected" format="reference" />
+        <attr name="icCurrent" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CpnEditText">
+        <attr name="text" />
+        <attr name="textSize" />
+        <attr name="icon" />
+        <attr name="hint" format="string" />
+        <attr name="enable" format="boolean" />
+        <attr name="lineColor" format="color|reference" />
+        <attr name="android:imeOptions" />
+        <attr name="android:inputType" />
+        <attr name="android:lines" />
+        <attr name="android:textStyle" />
+        <attr name="android:maxLength" />
+    </declare-styleable>
+    <declare-styleable name="CpnMenuItem">
+        <attr name="text" />
+        <attr name="icon" />
+    </declare-styleable>
+    <declare-styleable name="CpnMenu"></declare-styleable>
+
+
+    <declare-styleable name="CpnSurvey">
+        <attr name="type_survey" format="enum">
+            <enum name="TEXT" value="0" />
+            <enum name="TEXT_AREA" value="1" />
+            <enum name="SPINNER" value="2" />
+            <enum name="DATE" value="3" />
+            <enum name="LEVEL" value="4" />
+            <enum name="RADIO" value="5" />
+            <enum name="CHECKBOX" value="6" />
+        </attr>
+
+        <attr name="answers" format="integer" />
+        <attr name="id" format="integer" />
+        <attr name="question" format="string" />
+        <attr name="description" format="string" />
+        <attr name="require" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnSpinner">
+        <attr name="android:gravity" />
+        <attr name="android:textStyle" />
+        <attr name="sp_background" format="reference" />
+        <attr name="sp_icon_drop_down" format="reference" />
+        <attr name="sp_paddingLeft" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnStep">
+        <attr name="step_count" format="integer" />
+        <attr name="step_size" format="dimension" />
+        <attr name="step_line_size" format="dimension" />
+        <attr name="step_color_normal" format="color" />
+        <attr name="step_color_selected" format="color" />
+        <attr name="step_text_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CpnScaleImageView">
+        <attr name="scale" format="float" />
+    </declare-styleable>
+    <declare-styleable name="CpnMembershipCard">
+        <attr name="scale_width" format="dimension" />
+        <attr name="scale_height" format="dimension" />
+        <attr name="visible_use_card" format="enum">
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CpnPinEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0" />
+            <enum name="fromBottom" value="1" />
+            <enum name="none" value="-1" />
+        </attr>
+        <attr name="pinCharacterMask" format="string" />
+        <attr name="pinRepeatedHint" format="string" />
+        <attr name="pinLineStroke" format="dimension" />
+        <attr name="pinLineStrokeSelected" format="dimension" />
+        <attr name="pinCharacterSpacing" format="dimension" />
+        <attr name="pinTextBottomPadding" format="dimension" />
+        <attr name="pinLineColors" format="color" />
+        <attr name="pinBackgroundDrawable" format="reference" />
+        <attr name="pinBackgroundIsSquare" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnCustomRecyclerView">
+        <attr name="android:clipToPadding" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+    </declare-styleable>
+    <declare-styleable name="CpnBannerSurvey">
+    </declare-styleable>
+</resources>
